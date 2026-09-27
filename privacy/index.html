@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOTIANA Privacy</title>
+<meta name="description" content="What HOTIANA keeps on your device and exactly what leaves it.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Manrope:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav><a class="brand" href="/">HOTIANA</a><div class="links"><a href="/">Home</a><a href="/privacy/" aria-current="page">Privacy</a><a href="/support/">Support</a></div></nav>
+  <main class="policy">
+    <section>
+      <h1>Privacy policy</h1>
+      <div class="notice"><p><strong>Apple devices.</strong> HOTIANA for iPhone, iPad, Mac, Apple TV, Apple Watch, Apple Vision Pro and CarPlay is in development and not yet available. Its privacy policy will be published on this page before it is released. The policy below is the one published for the HOTIANA Android app on Google Play.</p></div>
+    </section>
+    <section>
+      <h2 style="margin-top:0">HOTIANA for Android</h2>
+<h2>The short version</h2>
+<p>Hotiana is your phone's assistant, and it is built to keep what it learns about you <strong>on your phone</strong>.</p>
+<p>It has <strong>no account and no sign-in</strong>. We run <strong>no server</strong> that your messages, contacts, calls, notifications or recordings are sent to. There are <strong>no adverts</strong>, and <strong>no analytics or tracking tools of our own</strong> in it.</p>
+<p><strong>Six</strong> things leave your phone. <strong>Four happen because you asked</strong>: <strong>your position, rounded</strong> when you ask about a place or for directions; <strong>the audio of a sentence you speak</strong> if your phone's own speech recogniser cannot answer offline; <strong>a message you explicitly send</strong> to someone you chose; and <strong>the wording of a document you choose to share</strong>, only when you share it.</p>
+<p><strong>Two happen without you doing anything, and we name them for that reason</strong>: <strong>diagnostic information</strong> sent by the mapping software we use, and <strong>a token identifying this installation</strong>, given to Google so that a message or call can reach you. Each is described below.</p>
+<h2>What stays on your phone</h2>
+<p>All of the following is read and used <strong>on the device</strong>. None of it is sent to us, because there is nowhere of ours to send it to.</p>
+<ul>
+<li><strong>Your messages.</strong> Hotiana can be your phone's messaging app. It reads and sends your texts on the phone itself.</li>
+<li><strong>Your calls and call history.</strong> Hotiana can be your phone's dialler.</li>
+<li><strong>Your contacts.</strong> Read so it can call and message the people you name. There is one place it <em>writes</em> a contact — the "New contact" panel you fill in yourself — and it asks for permission at the moment you press save, not before.</li>
+<li><strong>Your calendar.</strong> When you ask it to make an event it writes the event and nothing else: the title, the time, the day, the time zone, and a place if you gave one. Nothing identifying Hotiana is attached to it.</li>
+<li><strong>Your notifications.</strong> If you turn the feature on, Hotiana keeps a note of notifications from apps you choose, so you can ask about them. That note is <strong>encrypted on the device</strong>, holds <strong>only today</strong> — every read and every write first deletes anything older, so yesterday's is gone the first time it is touched, even if the phone was off at midnight — and you can erase it outright.</li>
+<li><strong>What you say to the wake word.</strong> Listening for the wake word happens <strong>entirely on your phone</strong>, with a model stored on the device. That part of the app makes no network connection at all.</li>
+<li><strong>Photographs you take in the Portrait creator.</strong> The camera is used only when you tap to take a portrait, and the picture is written to Hotiana's own folder on your phone.</li>
+<li><strong>Documents you import.</strong> Their text is extracted and held in the encrypted vault on the phone, and you can remove a document. It leaves the phone only in the case described below, and only when you choose.</li>
+<li><strong>Where you parked.</strong> If you ask Hotiana to remember where you left your car, it stores that spot on the phone. It is excluded from cloud backup and from phone-to-phone transfer. **It is kept until you park somewhere else or clear the app's data — there is not yet a way to tell Hotiana to forget it, and there should be.** We are fixing that.</li>
+</ul>
+<h2>What leaves your phone, and exactly what it is</h2>
+<p><strong>1. Your position, rounded, for places and directions.</strong> When you ask where you are, about a place nearby, or for directions, Hotiana sends your position <strong>rounded to about eleven metres</strong> to Mapbox — enough for the street and the block, not enough for the house or the driveway. Position-based searching sends a bias point rounded to about a kilometre. No other service receives your position; the app on Google Play carries no weather service. <strong>Hotiana holds no background-location permission, so Android cannot give it your position while the app is closed.</strong></p>
+<p><strong>2. The audio of one spoken sentence, sometimes.</strong> Speech is handled by <strong>your phone's own speech recogniser</strong>, and Hotiana asks it to work offline. If your phone cannot recognise speech offline — for example it has no offline English pack — the phone's recogniser handles it the way it does for any app, which may involve sending that audio to whoever provides it. That is your phone's service, not ours.</p>
+<p><strong>3. A message you send.</strong> If you ask Hotiana to share where you are, it reads your position fresh at that moment, asks you to confirm, and then puts it in the body of an <strong>ordinary text message</strong> to the person you named. It goes to that person, by text, from your phone. <strong>It does not pass through anything of ours</strong>, and neither the coordinate nor the message is kept by us.</p>
+<p><strong>4. The wording of a document you share, only when you share it.</strong> You can give Hotiana a document - a PDF, for instance. It reads the text out of it and keeps it in the <strong>encrypted vault on your phone</strong>, so it can answer questions about it and point you at the page. <strong>That stays on the phone</strong>, and you can remove the document.</p>
+<p>If you ask Hotiana something that needs help beyond the phone, it asks you first, and <strong>only then</strong> does the relevant wording go to the provider that answers it. <strong>It is your action each time, and nothing is sent without it.</strong> We receive none of it - we have no server - but it does leave your phone, so we declare it.</p>
+<h2>Identifiers</h2>
+<p>Hotiana uses Google's Firebase Cloud Messaging so it can be woken for an incoming message or call. Firebase issues a <strong>registration token</strong> for your installation. <strong>Google holds it</strong> - that is how the message reaches your phone, and our Data safety declaration reports it as shared with Google. <strong>Hotiana itself does not send that token anywhere, does not use it, and does not attach it to anything about you.</strong></p>
+<p>There are <strong>no advertising identifiers</strong> and <strong>no advertising or tracking tools</strong> in Hotiana, and we add no analytics or crash-reporting of our own.</p>
+<h2>Crash logs and diagnostics</h2>
+<p>Hotiana uses Mapbox's mapping software for maps, navigation and place search. That software can send <strong>crash logs and diagnostic information about the map</strong> to Mapbox when something goes wrong, so our Data safety declaration reports crash logs and diagnostics as <strong>collected and shared</strong> with Mapbox, for the purpose of keeping the map working. They are not attached to your name or your account, because Hotiana has neither. We add no crash reporting or analytics of our own.</p>
+<h2>Children</h2>
+<p>Hotiana is not directed at children.</p>
+<h2>Deleting your information</h2>
+<p>There is <strong>no account</strong> and <strong>no server of ours</strong>, so there is nothing of yours held elsewhere to delete.</p>
+<p>On your phone: uninstalling Hotiana removes it and everything it kept - including the vault and any documents you imported. Before that, you can remove a document, and you can erase the notification note from within the app. <strong>The parked-car spot is the exception noted above — there is no way to erase it on its own today.</strong></p>
+<h2>Contact</h2>
+<p>hotianaai@gmail.com</p>
+<p>Published by the HOTIANA developer account on Google Play for the Hotiana Android app (package net.hotiana.companion). This page was last updated on 23 September 2026 and describes the app as published on Google Play; when the app changes what leaves your phone, this page changes with it.</p>
+    </section>
+  </main>
+  <footer><span>HOTIANA is made by 16834981 Canada Inc., Mississauga, Ontario, Canada.</span><span>Contact: uzair@hotiana.ca</span></footer>
+</div>
+</body>
+</html>
