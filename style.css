@@ -1,9 +1,11 @@
 :root{
   --bg:#f7f8fb; --surface:#ffffff; --ink:#141a24; --muted:#586273; --line:#e0e5ee; --accent:#2156c4;
+  --owner-bg:#fff3cd; --owner-ink:#5c3c00; --owner-line:#b07a00;
   --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif; --body:"Manrope","Segoe UI",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root{ color-scheme:dark; --bg:#0f1319; --surface:#161b23; --ink:#e7ebf1; --muted:#9ba6b6; --line:#28303b; --accent:#86aef2; }
+  :root{ color-scheme:dark; --bg:#0f1319; --surface:#161b23; --ink:#e7ebf1; --muted:#9ba6b6; --line:#28303b; --accent:#86aef2;
+    --owner-bg:#3a2d0a; --owner-ink:#ffd88a; --owner-line:#a07a2a; }
 }
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -31,5 +33,26 @@ p{margin:0; max-width:66ch}
 .policy li{margin-block:6px}
 .notice{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:16px 18px}
 footer{margin-top:48px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; display:flex; flex-direction:column; gap:4px}
+footer .footer-links{display:flex; gap:6px 18px; flex-wrap:wrap; margin-bottom:6px}
+footer .footer-links a{color:var(--muted); font-weight:600; text-decoration:none}
+footer .footer-links a:hover, footer .footer-links a[aria-current="page"]{color:var(--ink); text-decoration:underline}
+.policy h3{margin-top:10px}
+.policy ol{margin:0; padding-left:1.4em; max-width:66ch}
+.table-wrap{overflow-x:auto; background:var(--surface); border:1px solid var(--line); border-radius:14px}
+.policy table{width:100%; min-width:520px; border-collapse:collapse; font-size:15px; line-height:1.55}
+.policy th, .policy td{text-align:left; vertical-align:top; padding:10px 14px; border-bottom:1px solid var(--line)}
+.policy tr:last-child td{border-bottom:0}
+.policy th{font-size:13px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--muted)}
+@media (max-width:640px){
+  .policy table{min-width:0}
+  .policy thead{display:none}
+  .policy table, .policy tbody, .policy tr, .policy td{display:block}
+  .policy tr{padding:12px 16px; border-bottom:1px solid var(--line)}
+  .policy tr:last-child{border-bottom:0}
+  .policy td{padding:2px 0; border-bottom:0}
+  .policy td[data-label]::before{content:attr(data-label); display:block; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); margin-top:6px}
+  .policy td:first-child[data-label]::before{margin-top:0}
+}
+.owner{background:var(--owner-bg); color:var(--owner-ink); border:1px dashed var(--owner-line); border-radius:4px; padding:0 4px; font-weight:600; font-size:.92em}
 a{color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent); outline-offset:2px}
