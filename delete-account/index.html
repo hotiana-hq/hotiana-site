@@ -16,8 +16,8 @@
     <section>
       <h1>Delete your HOTIANA account</h1>
       <p class="lede">This page explains how to delete your account and data for <strong>HOTIANA</strong> and <strong>HOTIANA Vantage</strong> on Android, published by <strong>16834981 Canada Inc.</strong> <span class="owner">[OWNER: confirm the developer name exactly as shown on the Google Play listing]</span></p>
-      <div class="notice"><p><span class="owner">[OWNER: do not publish this page until account deletion is switched on in the live identity service and a test account has been deleted end to end]</span></p></div>
-      <p>An account is optional: HOTIANA works without one. If you never signed in, nothing about you is held on our servers; see <a href="#no-account">If you never signed in</a>.</p>
+      <div class="notice"><p><span class="owner">[OWNER: do not publish this page until (1) account deletion is switched on in the live identity service, (2) a test account has been deleted end to end in the app, including the sign-in-again step, and (3) the email route below can be carried out (see the note in that section)]</span></p></div>
+      <p>An account is optional: HOTIANA works without one. If you never signed in, we hold no account or profile about you; see <a href="#no-account">If you never signed in</a>.</p>
     </section>
 
     <section>
@@ -25,6 +25,7 @@
       <ol>
         <li>Open HOTIANA on a phone where you are signed in to the account you want to delete.</li>
         <li>Open <strong>Settings</strong>, then <strong>Account</strong>.</li>
+        <li><strong>Sign in again if needed.</strong> For your protection, our server accepts a deletion only within 10 minutes of signing in. If you signed in earlier than that, tap <strong>Sign out</strong>, then tap <strong>Sign in with Google</strong> and choose the same Google account. Then go straight to the next step. Signing out does not delete your account or your data. If you skip this step, HOTIANA shows &ldquo;Sign in with Google again, then confirm account deletion.&rdquo; and nothing is deleted.</li>
         <li>Tap <strong>Delete my HOTIANA account and data</strong> and read the list of what will be deleted.</li>
         <li>If HOTIANA finds data saved on the phone from before you had an account, it lists it. Choose whether to erase that too; it is kept unless you choose to erase it.</li>
         <li>Tap <strong>Confirm account deletion</strong> and confirm with your fingerprint, face or device PIN.</li>
@@ -34,8 +35,9 @@
 
     <section>
       <h2>Delete your account by email</h2>
-      <p>If you no longer have the app or the phone, email <span class="owner">[OWNER: monitored privacy contact email]</span> from the email address of the Google account you used to sign in to HOTIANA, with the subject <strong>&ldquo;Delete my HOTIANA account&rdquo;</strong>. We may ask you to confirm the request. We complete it within <span class="owner">[OWNER: e.g. 30 days]</span> and tell you when it is done.</p>
-      <p>Deleting by email removes the account on our servers. Data stored on a phone stays there until you clear the app's storage or uninstall the app on that phone.</p>
+      <div class="notice"><p><span class="owner">[OWNER: do not publish this email route until an operator deletion tool exists for the identity service. It must find the account from its email address and do exactly what in-app deletion does. That is: remove the name, email address and picture link; remove the sign-in links; revoke sessions, connected-AI grants and linked phones, TVs and computers; retire the installations; and start the 7-day purge. It must also have been run end to end on a test account. Today the only deletion route needs the account's own sign-in from the last 10 minutes, so an email request cannot be carried out without editing the database by hand.]</span></p></div>
+      <p>If you no longer have the app or the phone, email <span class="owner">[OWNER: monitored privacy contact email]</span> from the email address of the Google account you used to sign in to HOTIANA, with the subject <strong>&ldquo;Delete my HOTIANA account&rdquo;</strong>. We reply to that address to confirm the request. Once you confirm, we delete the account on our servers in the same way as deletion in the app: the same records, on the same timetable shown below. We complete it within <span class="owner">[OWNER: e.g. 30 days]</span> and tell you when it is done.</p>
+      <p>Deleting by email does not reach your phone. Data stored on a phone stays there until you clear the app's storage or uninstall the app on that phone.</p>
     </section>
 
     <section>
@@ -44,10 +46,11 @@
         <thead><tr><th>Data</th><th>When it is deleted</th></tr></thead>
         <tbody>
           <tr><td data-label="Data">Your name, email address and profile picture link on our identity service</td><td data-label="When it is deleted">Immediately.</td></tr>
-          <tr><td data-label="Data">Your sign-in sessions, connected-AI access grants, and the phones and computers linked to your account</td><td data-label="When it is deleted">Revoked immediately.</td></tr>
+          <tr><td data-label="Data">Your sign-in sessions, connected-AI access grants, and the phones, computers and TVs linked to your account</td><td data-label="When it is deleted">Revoked immediately, and the device names are removed immediately.</td></tr>
           <tr><td data-label="Data">The link between your Google sign-in and your HOTIANA account</td><td data-label="When it is deleted">Removed immediately.</td></tr>
-          <tr><td data-label="Data">All remaining account records (account ID, sessions, linked devices, access grants, sign-in history)</td><td data-label="When it is deleted">7 days after you delete. <span class="owner">[OWNER: confirm; the scheduled purge job must be running]</span></td></tr>
-          <tr><td data-label="Data">Service logs (identity service and phone relay)</td><td data-label="When it is deleted">Age out after 30 days. Relay logs contain no request content. <span class="owner">[OWNER: confirm]</span></td></tr>
+          <tr><td data-label="Data">All remaining account records: account ID, session records, linked-device records (installation ID, platform, app version, key fingerprint), access grants and sign-in history. This includes sessions you signed out of and devices you removed earlier, which are kept, marked as ended, until the account is deleted.</td><td data-label="When it is deleted">7 days after you delete. <span class="owner">[OWNER: confirm; the scheduled purge job must be running]</span></td></tr>
+          <tr><td data-label="Data">Settings of services you connected and saved to your account</td><td data-label="When it is deleted">With your account. <span class="owner">[OWNER: the account connection-settings route is not live; confirm that it deletes these settings before it goes live]</span></td></tr>
+          <tr><td data-label="Data">Service logs (identity service and phone relay): request logs with your IP address, user agent, the address requested and time, plus event and error logs with no request content</td><td data-label="When it is deleted">Deleted automatically 30 days after each entry. Account deletion does not remove them sooner. <span class="owner">[OWNER: confirm]</span></td></tr>
           <tr><td data-label="Data">AI reply reports you sent us</td><td data-label="When it is deleted">30 days after they were sent. <span class="owner">[OWNER: confirm]</span></td></tr>
           <tr><td data-label="Data">On the phone: this account's vault, conversation history, widget data, saved shared AI replies, links to your computers and connected AIs, and saved sign-ins</td><td data-label="When it is deleted">Immediately after our server confirms the deletion (in-app deletion only).</td></tr>
           <tr><td data-label="Data">On the phone: data saved before you had an account</td><td data-label="When it is deleted">Only if you choose to erase it during deletion.</td></tr>
@@ -67,7 +70,7 @@
 
     <section id="no-account">
       <h2>If you never signed in</h2>
-      <p>Everything HOTIANA keeps is on your phone. To erase all of it at once, open Android Settings &rsaquo; Apps &rsaquo; HOTIANA &rsaquo; Storage &rsaquo; Clear storage, or uninstall the app. The vault is excluded from backups, so this removes it permanently. You can also ask HOTIANA to forget individual facts, remove documents and forget people added from your contacts.</p>
+      <p>We hold no account or profile about you. If your phone contacted our services, for example in a refused sign-in attempt, only our request logs (with your IP address and app type) and short-lived sign-in attempt counters remain. They are deleted within 30 days. Everything else HOTIANA keeps is on your phone. To erase all of it at once, open Android Settings &rsaquo; Apps &rsaquo; HOTIANA &rsaquo; Storage &rsaquo; Clear storage, or uninstall the app. The vault is excluded from backups, so this removes it permanently. You can also ask HOTIANA to forget individual facts, remove documents and forget people added from your contacts.</p>
     </section>
 
     <section>
