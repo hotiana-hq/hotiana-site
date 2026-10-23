@@ -15,45 +15,24 @@
   <main class="policy">
     <section>
       <h1>Privacy policy</h1>
-      <p class="muted">Last updated 22 October 2026 (draft). Effective date: <span class="owner">[OWNER: effective date]</span></p>
-      <div class="notice"><p><strong>Apple devices.</strong> HOTIANA for iPhone, iPad, Mac, Apple TV, Apple Watch, Apple Vision Pro and CarPlay is in development and not yet available. Its privacy policy will be published on this page before it is released. The policy below is for the HOTIANA Android app and the HOTIANA Companion app for Windows.</p></div>
+      <p class="muted">Last updated 23 October 2026</p>
     </section>
 
     <section>
       <h2>Who this policy covers</h2>
-      <p>This policy covers apps published by <strong>16834981 Canada Inc.</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;) <span class="owner">[OWNER: confirm the publisher name exactly as shown on the Google Play listing]</span>:</p>
-      <ul>
-        <li><strong>HOTIANA</strong> for Android (<code>net.hotiana.companion</code>): a personal assistant for your phone. It works as an ordinary app, can optionally act as your home screen, keeps a private vault on your phone, and can let an AI you already use (for example Claude, Gemini or ChatGPT) carry out actions on your phone.</li>
-        <li><strong>HOTIANA Companion</strong> for Windows (preview): links your phone with your own Windows computer. It is not yet generally available.</li>
-        <li><strong>HOTIANA Vantage</strong> (<code>net.hotiana.companion.vantage</code>): a version with easier notification controls. It is not offered on Google Play at launch and is only available as a direct-install test build. <span class="owner">[OWNER: confirm Vantage stays out of the Play launch (D-268)]</span></li>
-      </ul>
-      <p>Everything here applies to all of them unless a section says otherwise.</p>
-    </section>
-
-    <section>
-      <h2>Two editions</h2>
-      <p>Some features differ by how you installed HOTIANA. This policy names the edition wherever that matters.</p>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Edition</th><th>How you get it</th><th>Main differences</th></tr></thead>
-        <tbody>
-          <tr><td data-label="Edition"><strong>Google Play edition</strong></td><td data-label="How you get it">Installed from Google Play</td><td data-label="Main differences">No access to your text messages (SMS/MMS) or call history. Calls and messages open your default phone and messaging apps. Map screens are hidden. No automatic crash reporting and no built-in problem reporter. Firebase Cloud Messaging is not started.</td></tr>
-          <tr><td data-label="Edition"><strong>Direct-install test builds</strong></td><td data-label="How you get it">Installed directly from a file we gave you as a tester</td><td data-label="Main differences">Can act as your default SMS and phone app, and then reads messages and call history on the phone. Includes maps, optional crash reporting (off until you turn it on) and a problem reporter you fill in yourself.</td></tr>
-        </tbody>
-      </table></div>
+      <p>This policy covers the Android app <strong>HOTIANA</strong> (<code>net.hotiana.companion</code>), published by <strong>16834981 Canada Inc.</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;). HOTIANA is a personal assistant for your phone. It works as an ordinary app, can optionally act as your home screen, keeps a private vault on your phone, and can connect the AI you already use (for example Claude, Gemini or ChatGPT) so that AI can carry out actions on your phone.</p>
+      <p>HOTIANA Vantage, a separate edition with an optional accessibility service, is not yet available on Google Play. We will add it to this policy before it becomes available.</p>
     </section>
 
     <section>
       <h2>The short version</h2>
       <ul>
         <li><strong>Your vault stays on your phone.</strong> It is not synced to any cloud. HOTIANA turns off Android backup and device-to-device transfer for all of its data.</li>
-        <li><strong>HOTIANA works without an account.</strong> Signing in with Google is optional. It is needed to let an outside AI act on your phone, to link your computer, and for features we run for signed-in testers (cloud voice and web answers).</li>
-        <li><strong>Some things do leave your phone</strong>, only when you use a feature that needs it: signing in, letting an outside AI act on your phone, cloud voice, web answers, local weather, YouTube and news panels on Home, services you connect yourself, your own computer, HOTIANA Care requests, and reports you choose to send (and, in direct-install test builds, maps and Google Home). Each is described below with who receives it. The <a href="#recipients">list of recipients</a> names every company involved.</li>
+        <li><strong>Some things do leave your phone, only when you use a feature that needs it:</strong> signing in, connecting an outside AI to your phone (the bridge), cloud voice, web answers, place search, weather, reporting an AI reply, your own computer, Home media and news, and services you connect yourself. Each is described below with who receives it.</li>
+        <li><strong>Nothing from your vault is shared with an outside AI unless you approve that specific answer</strong> with your fingerprint, face or device PIN.</li>
         <li><strong>You decide which outside AI can act on your phone, on which devices and with which permissions.</strong> You can see and revoke each one in <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>.</li>
-        <li><strong>Our servers keep standard request logs.</strong> When your phone contacts HOTIANA's identity service or phone relay, the request log records your IP address and app type. These logs are kept for 30 days.</li>
-        <li><strong>Nothing from your vault is shared with an outside AI unless you approve that specific answer</strong> with a fresh fingerprint or face check (or your device PIN where biometrics are not available).</li>
-        <li><strong>Cloud voice is different from on-device voice.</strong> If you choose a cloud voice provider, it receives your conversation and the results of what HOTIANA looks up for you, which can include your notifications, calendar and contacts while your private information is unlocked. See <a href="#cloud-voice">Cloud voice</a>.</li>
-        <li>We do not sell your data, do not show ads of our own and do not use your data for advertising. We add no advertising or analytics tools. (Videos from YouTube can include YouTube's own ads.)</li>
-        <li>You can <a href="/delete-account/">delete your account</a> in the app or by email, and you can erase phone data at any time.</li>
+        <li>We do not sell your data and do not use it for advertising or ad tracking.</li>
+        <li>You can <a href="/delete-account/">delete your account</a> in the app or by emailing <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a> from your account's email address.</li>
       </ul>
     </section>
 
@@ -62,195 +41,106 @@
       <div class="table-wrap"><table>
         <thead><tr><th>What</th><th>Details</th></tr></thead>
         <tbody>
-          <tr><td data-label="What"><strong>Vault</strong> (facts you ask HOTIANA to remember, documents you add, people it knows about)</td><td data-label="Details">Stored in the app's private storage on your phone. Not synced to any server. Not included in Android cloud backup or device-to-device transfer.</td></tr>
+          <tr><td data-label="What"><strong>Vault</strong> (facts you ask HOTIANA to remember, documents you add, people it knows about)</td><td data-label="Details">Stored in the app's private storage on your phone. Not synced to any server. Excluded from Android cloud backup and device-to-device transfer.</td></tr>
           <tr><td data-label="What"><strong>Conversations with the assistant</strong></td><td data-label="Details">Kept on your phone. Not synced to our servers.</td></tr>
           <tr><td data-label="What"><strong>Sign-in session and connection tokens</strong></td><td data-label="Details">Stored encrypted on your phone.</td></tr>
-          <tr><td data-label="What"><strong>Settings, Home layout and widget entries</strong></td><td data-label="Details">Stored on your phone only. Widgets keep what you type into them, for example a place, a date, a timer length or a link to a document. Deleting a widget's settings does not delete the files a link points to.</td></tr>
-          <tr><td data-label="What"><strong>AI replies shared back to HOTIANA</strong></td><td data-label="Details">When you share an AI app's reply into HOTIANA, it is kept on your phone (up to 20 outgoing previews and 50 replies per account).</td></tr>
-          <tr><td data-label="What"><strong>Action record</strong></td><td data-label="Details">A record of what this phone did for outside AIs, your computer and your TVs: the action's name, which assistant or device asked, the device it acted on, the times, and whether it worked. It never contains messages, the details of the request, phone numbers or keys. It is stored encrypted on the phone for 90 days (at most 10,000 actions). You can view, export or delete it in <strong>Settings &rsaquo; Connections &rsaquo; Action record</strong>. <span class="owner">[OWNER: the action record is not yet merged into the release build; remove this row if it does not ship]</span></td></tr>
-          <tr><td data-label="What"><strong>Notifications</strong> (only if you grant notification access)</td><td data-label="Details">App name, sender, title, message text and available actions are read on the phone so HOTIANA can show them on Home, read them aloud, dismiss them or send a reply you approve through the original app. For apps you choose, HOTIANA keeps today's notifications in an encrypted history on the phone (up to 400). With on-device voice they stay on the phone. <strong>With cloud voice</strong>, when you ask about your notifications, what the assistant reads (app, sender, title and message text) is sent to the voice provider. See <a href="#cloud-voice">Cloud voice</a>. If you link your computer and turn on notifications there, they are also shown on that computer; see <a href="#computer">Your own computer</a>. <span class="owner">[OWNER: phone link only; remove this sentence if it does not ship]</span></td></tr>
-          <tr><td data-label="What"><strong>Messages and call history</strong> (direct-install test builds only, and only if you make HOTIANA your default SMS or phone app)</td><td data-label="Details">Read from Android's own message and call-log stores to show them in HOTIANA. Not copied to our servers. See <a href="#messages">Messages and call history</a>.</td></tr>
-          <tr><td data-label="What"><strong>On-device speech and assistant processing</strong></td><td data-label="Details">Wake-word listening, routing and vault look-ups run on the phone. HOTIANA's own speech recognition and spoken voice also run on the phone once their speech models are installed. When you agree to download those models, they come from Google Play, which sees an ordinary app download, not your voice. <span class="owner">[OWNER: the speech_pack asset pack the Play code requests is not defined in the 1846 build (build.gradle.kts:450); confirm before launch]</span> HOTIANA can also run a small language model (Google's Gemma) entirely on the phone when the model file is present; it sends nothing off the phone. The Google Play edition does not download this model. <span class="owner">[OWNER: if a model download is added, name where it comes from (e.g. Hugging Face) here]</span> Dictation uses your phone's own speech recognition service. HOTIANA asks for on-device recognition where the phone offers it; if your phone's service works online, that service handles the audio under its own policy. <span class="owner">[OWNER: confirm]</span></td></tr>
+          <tr><td data-label="What"><strong>Settings and preferences</strong></td><td data-label="Details">Stored on your phone only.</td></tr>
+          <tr><td data-label="What"><strong>AI replies shared back to HOTIANA</strong></td><td data-label="Details">Kept on your phone, up to 20 outgoing previews and 50 replies per account.</td></tr>
+          <tr><td data-label="What"><strong>Action record</strong></td><td data-label="Details">Names, devices, times and outcomes of what connected AIs did on your phone. Never message text, request arguments, phone numbers or keys. Stored encrypted on the phone for 90 days, up to 10,000 actions, and excluded from backup and device transfer. You can view, export or delete it in <strong>Settings &rsaquo; Connections &rsaquo; Action record</strong>.</td></tr>
+          <tr><td data-label="What"><strong>Notifications</strong> (only if you grant notification access)</td><td data-label="Details">App name, sender, title, message text and available actions are read so HOTIANA can show, announce aloud on the phone, dismiss or reply to them. For apps you choose, HOTIANA keeps today's notifications in an encrypted history on the phone, up to 400. Older days are removed the next time the history is used. With cloud voice, notification information you ask it to read is sent to ElevenLabs; see <a href="#cloud-voice">Cloud voice</a>. If you turn on notifications on your linked computer, they are also shown there; see <a href="#computer">Your own computer</a>.</td></tr>
+          <tr><td data-label="What"><strong>On-device speech and assistant processing</strong></td><td data-label="Details">Wake-word, routing and vault lookups run on the phone. HOTIANA can also run Google's Gemma language model entirely on the phone when its model file is present, with no cloud fallback. The Google Play edition does not download this model.</td></tr>
         </tbody>
       </table></div>
-      <p>Local storage does not mean HOTIANA never goes online. The next section says exactly when data leaves your phone.</p>
+      <p>Local storage does not mean HOTIANA never goes online. The next section says when data leaves your phone.</p>
     </section>
 
     <section>
       <h2>What leaves your phone, and who receives it</h2>
 
-      <h3>1. Signing in (HOTIANA account, optional)</h3>
-      <p>When you sign in with Google, the app sends HOTIANA's identity service a one-time Google sign-in token, a random installation ID and the app type. The service returns your account ID, name, email address and profile picture link, plus session tokens. The app may load your profile picture from that link (normally a Google address) to show it. When you link your phone to the bridge, the app also sends a device public key, a device name and the app version. <strong>This traffic uses HTTPS (TLS); the app refuses to talk to the identity service over anything else.</strong></p>
-      <p>During the beta, sign-in is limited to invited testers. If your Google account is not on the list, the service refuses the sign-in and does not create an account. The attempt still appears in the request log described below. Everything else in HOTIANA keeps working without an account.</p>
-      <p><strong>What the identity service logs.</strong> Like every Google Cloud Run service, it keeps a request log of every request it receives, including a refused sign-in. Each entry records:</p>
-      <ul>
-        <li>your IP address;</li>
-        <li>the user agent (the app and Android version);</li>
-        <li>the address requested;</li>
-        <li>the time, the response status and how long the request took.</li>
-      </ul>
-      <p>These logs are kept in Google Cloud Logging for 30 days and are used to run and protect the service <span class="owner">[OWNER: confirm, or add a Cloud Logging exclusion and change this text]</span>. The service's own error log records only the error type, where in the code it happened, the route and a request ID. To limit repeated requests (for example sign-in attempts, web answers and voice sessions), the service also counts requests under a keyed one-way code made from your IP address, installation ID, session or account. Each count is deleted when its time window ends, which is between 10 seconds and 24 hours <span class="owner">[OWNER: confirm the Firestore TTL policy on rate windows]</span>.</p>
-      <p>Recipients: HOTIANA's identity service, operated by us on Google Cloud Run in Toronto, Canada (<code>northamerica-northeast2</code>), with account records in Google Cloud Firestore <span class="owner">[OWNER: confirm the Firestore location]</span>; and Google, for Google sign-in.</p>
+      <h3>1. Signing in (HOTIANA account)</h3>
+      <p>When you sign in with Google, the app sends HOTIANA's identity service a one-time Google sign-in token, a random installation ID and the app type. The service returns your account ID, name, email address and profile picture link, plus session tokens. When you enroll your phone for the bridge, the app also sends a device public key, a device name and the app version. <strong>This traffic uses HTTPS (TLS); the app refuses to talk to the identity service over anything else.</strong></p>
+      <p>Recipients: HOTIANA's identity service, operated by us on Google Cloud in Toronto, Canada (Cloud Run and a Firestore database in <code>northamerica-northeast2</code>), and Google for Google sign-in.</p>
+      <p>Google Cloud logs web requests to our services: the time, address requested, status, IP address and app identifier. Cloud Logging keeps these logs for 30 days. To limit repeated requests, the service also counts requests under keyed one-way codes of an IP address, installation ID, session or account. Counting windows range from 10 seconds to 24 hours; counters are kept for at most 24 hours.</p>
 
-      <h3 id="assistants">2. Letting an outside AI act on your phone (the bridge)</h3>
-      <p>You can let an AI such as Claude, Gemini or ChatGPT act on your phone, and on any HOTIANA TV linked to your account <span class="owner">[OWNER: HOTIANA TV is not on Google Play; confirm how to describe TVs at launch]</span>. To connect, the AI sends you to HOTIANA's sign-in page. After you sign in, a consent page shows the AI's name, your account, and which phone and TVs it may use, and lets you choose its permissions:</p>
-      <ul>
-        <li><strong>Connection and catalog</strong> (always included): see that your devices are connected and which actions they offer;</li>
-        <li><strong>Open screens</strong>: open HOTIANA screens on your phone;</li>
-        <li><strong>Run device actions</strong>: run the actions each device allows, with the same confirmations as on the phone (on a TV, only while control is allowed on that TV);</li>
-        <li><strong>Share style dials</strong>: read your visual style settings.</li>
-      </ul>
-      <p>The AI can then ask your phone to perform actions from HOTIANA's published action list, for example reading the battery level, placing a call you confirm, or opening a screen. Your phone keeps an outbound connection to HOTIANA's phone relay, which passes each request to the phone and each result back to the AI. In the Google Play edition this connection runs while HOTIANA is running and reconnects when the phone wakes or unlocks; Android may stop it in the background. Direct-install test builds can keep it running in the background and after a restart, with a notification.</p>
+      <h3 id="assistants">2. The bridge (connecting an outside AI to your phone)</h3>
+      <p>If you connect an AI such as Claude, Gemini or ChatGPT, that AI can ask your phone to perform actions from HOTIANA's published action list, for example reading the battery level, placing a call you confirm, or opening a screen. While HOTIANA is running, your phone keeps an outbound connection to HOTIANA's relay, which passes each request to the phone and each result back to the AI. In the Google Play edition it reconnects when the phone wakes or unlocks; Android may stop it in the background.</p>
+      <p>Before you allow access, a consent page shows the AI's name, your account, which phone and TVs it may use, and its permissions: connection and catalog (always included), open screens, run device actions, and share style dials.</p>
       <ul>
         <li><strong>What passes through the relay:</strong> your account and device identifiers, authorization tokens, the request, and its result (for example a battery percentage, whether a call was started, or the name and number of the person on an active call if the AI asked for call status).</li>
-        <li><strong>Relay location:</strong> Google Cloud Run, Toronto, Canada (<code>northamerica-northeast2</code>). This connection uses TLS.</li>
-        <li><strong>What the relay keeps:</strong> a receipt of each finished action is held in the relay's memory while your phone stays connected, so that a repeated request is answered without running the action twice. Receipts older than 24 hours are removed. Receipts are not written to storage. <span class="owner">[OWNER: confirm]</span></li>
-        <li><strong>What the relay logs:</strong> the relay's own log records the event, the time, an operation ID, a shortened one-way code of the phone or TV ID (never the ID itself), the status, the duration and the action name. Requests, results, arguments and tokens are never logged there. Separately, Google Cloud Run keeps a request log for each connection to the relay: your IP address, the user agent, the address requested, the time, the status and how long the connection lasted. Both logs are kept in Google Cloud Logging for 30 days. <span class="owner">[OWNER: confirm, or add a Cloud Logging exclusion and change this text]</span></li>
-        <li><strong>What our identity service keeps about each AI you allow</strong> (an &ldquo;access grant&rdquo;): the AI's name and app ID, which phone and TVs it may use, the permissions you chose, a one-way code of its secret, and when it was approved, last renewed and expires.</li>
-        <li><strong>Seeing and revoking access:</strong> open <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>. It lists each AI with the devices it can use, its permissions in plain words, when you approved it and when it last renewed its access. Tap <strong>Revoke</strong>, then confirm. The relay then refuses that AI's next action request, and stops showing it your devices within a few seconds.</li>
-        <li>The AI provider you connected receives the results and handles them under its own privacy policy. Revoking access stops future requests; it does not erase what that provider already holds. Use the provider's own controls for that.</li>
+        <li><strong>Relay location:</strong> Google Cloud Run, Toronto, Canada (<code>northamerica-northeast2</code>). <strong>This connection uses TLS.</strong></li>
+        <li><strong>What the relay keeps:</strong> requests and results are not stored. A receipt of each finished action is held in memory only while your phone stays connected, for at most 24 hours.</li>
+        <li><strong>What the relay logs:</strong> request metadata only: time, event, request ID, a one-way code of the phone or TV ID, status, duration and action name. These logs contain no request content or results. Google Cloud also keeps the web-request logs described above. Logs are kept for 30 days.</li>
+        <li><strong>Seeing and revoking access:</strong> open <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>. It lists each AI, its devices and permissions, when you approved it and when it last renewed access. Tap <strong>Revoke</strong>, then confirm. A revoked AI's next action request is refused; device listings stop within a few seconds.</li>
+        <li>The connected AI provider receives the results and handles them under its own privacy policy. Revoking access stops future requests; it does not erase what that provider already holds. Use the provider's own controls for that.</li>
       </ul>
 
       <h3>3. Releasing vault information to an AI</h3>
-      <p>When a connected AI needs something from your vault, HOTIANA shows you the exact answer it would share. It is released only if you accept it <strong>and</strong> confirm with a fresh fingerprint or face check (your device PIN is accepted where biometrics are not available). One approval releases one answer, to the AI that asked. If you decline, cancel or authentication fails, the answer stays on your phone. Once released, that answer is held by the AI provider under its policy.</p>
+      <p>When a connected AI needs something from your vault, HOTIANA shows you the exact answer it would share. It is released only if you accept it <strong>and</strong> confirm with fresh device authentication (fingerprint, face or PIN). One approval releases one answer. If you decline or authentication fails, the answer stays on your phone. Once released, that answer is held by the AI provider under its policy.</p>
 
-      <h3>4. Handing a request to an AI app on your phone</h3>
-      <p>You can send a request, and context you select, to an AI app such as Claude, Gemini or ChatGPT through Android's share sheet. Context is only included after a fresh authentication that names the app it goes to. You send it yourself in that app; HOTIANA does not send it or read the reply automatically. From that point the AI app handles it under its own policy.</p>
+      <h3 id="cloud-voice">4. Cloud voice (optional)</h3>
+      <p>If you choose cloud voice, your voice audio and conversation text go directly from your phone to <strong>ElevenLabs</strong> for speech and reply generation. HOTIANA's identity service only issues the short-lived credential for that session. The microphone is used only while a voice session is active, and Android shows its microphone indicator. You can also use an ElevenLabs key of your own, stored encrypted on the phone. ElevenLabs handles the data under its own policy.</p>
+      <p>When you ask cloud voice about notifications, the information it reads is sent to ElevenLabs. Asking what an app sent today returns at most 5 notifications, each shortened to 140 characters with numbers, addresses and links removed. Reading one notification returns its title and text, up to 400 characters. Message text is read only from apps you chose; a summary of what is waiting can name apps and senders beyond those chosen apps.</p>
+      <p>Private-information access is unlocked with your fingerprint, face or device PIN for the period you choose: 1 hour by default, or 15 minutes, 4 hours, 12 hours, or until the phone locks. Vault answers still need their own approval as described above.</p>
 
-      <h3 id="cloud-voice">5. Cloud voice (optional)</h3>
-      <p>If you choose cloud voice, HOTIANA connects your phone directly to <strong>ElevenLabs</strong>, which recognises your speech, writes the assistant's replies and speaks them. During a cloud voice conversation ElevenLabs receives:</p>
+      <h3>5. Services you connect yourself (MCP connections)</h3>
+      <p>You can connect HOTIANA to other online services. Before you sign in, HOTIANA shows which server it will connect to and what that server asks for. Data goes only to that server, for the calls you choose. When you disconnect, HOTIANA revokes the token and deletes it from your phone.</p>
+
+      <h3>6. Web answers, places and weather</h3>
       <ul>
-        <li>your voice audio and the text of the conversation;</li>
-        <li>the assistant's settings for the conversation (its personality and reply style);</li>
-        <li>when HOTIANA starts the conversation for you, what it is about. For example, in direct-install test builds that are your default phone app, HOTIANA can say who is calling;</li>
-        <li>while your private information is unlocked, a short record of your previous conversation with HOTIANA, so the assistant can pick up where you left off;</li>
-        <li><strong>the results of what the assistant does or looks up on your phone for you.</strong> Many results are plain, such as the battery level, what is playing or the local weather. Some contain your own information, for example:
-          <ul>
-            <li>the app, sender, title and text of a notification you ask it to read (up to 400 characters);</li>
-            <li>the apps and senders of notifications that are waiting;</li>
-            <li>calendar event titles and times;</li>
-            <li>your reminders;</li>
-            <li>the name of the person a call or message is for.</li>
-          </ul>
-          In direct-install test builds the results can also include your recent calls and messages, and where you are, when you ask for them.</li>
+        <li><strong>Web answers:</strong> when you are signed in and ask a general-knowledge question that needs the web, the question text (not your name or email) goes through HOTIANA's identity service to <strong>OpenAI's API with web search</strong>. We ask OpenAI not to store these requests. Questions containing an email address, web address, coordinates, phone number, street address or postal code are refused before anything is sent.</li>
+        <li><strong>Mapbox:</strong> when you ask HOTIANA to find a place, for example a shop for a pickup errand, your search words, approximate location and language are sent to Mapbox to return results (<a href="https://www.mapbox.com/legal/privacy">Mapbox privacy policy</a>). Map screens are hidden in the Google Play edition.</li>
+        <li><strong>Local weather:</strong> while Home is showing, your position, rounded to two decimal places (about 1 km), is sent to <strong>Open-Meteo</strong> to fetch the weather. No account or device identifier is sent. Updates occur at most once every 10 minutes after success, sooner after failure or if you tap to retry. &ldquo;Local weather&rdquo; is on by default and needs location permission; you can turn it off in Settings.</li>
       </ul>
-      <p>HOTIANA only reads your own information (notifications, calendar, reminders, contacts and, in direct-install test builds, call and message history and location) while your private information is unlocked. You unlock it with your fingerprint, face or device PIN. It then stays open for the period you choose in settings: 1 hour by default, or 15 minutes, 4 hours, 12 hours, or until the phone locks. You are not asked again for each answer. If your phone has no screen lock, these reads are not locked. Facts stored in your vault are handled differently: each one still needs its own approval (section 3). With on-device voice, none of this leaves your phone. <span class="owner">[OWNER: D-F open. Decide whether notification text is shown on screen first, with a separate per-app choice before it is sent to a cloud voice provider; until that is built and verified, this paragraph describes the current behaviour]</span></p>
-      <p>For signed-in testers, HOTIANA's identity service issues a short-lived ElevenLabs session credential. The conversation itself goes straight to ElevenLabs, not through our servers. You can also use an ElevenLabs key of your own, which is stored encrypted on the phone. The app also contains an OpenAI voice option, but HOTIANA's service does not issue credentials for it, so the Google Play edition does not use it. The microphone is used only while a voice session is active, and Android shows its microphone indicator. A conversation can continue while you use another screen. ElevenLabs handles the data under its own policy. <span class="owner">[OWNER: declare these flows (including notification content, calendar and contacts shared with the voice provider) in the Play Data safety form]</span></p>
-      <p>When you ask what an app sent today, the answer includes at most 5 notifications, each shortened to 140 characters, with numbers, addresses and links removed. When you ask the assistant to read a notification, it gets that notification's app, title and text unshortened, up to 400 characters. Message text is read only from apps you chose in HOTIANA's notification settings; a summary of what is waiting can name the apps and senders of any notification on your phone.</p>
-      <p><strong>How long the provider keeps it.</strong> We do not yet promise that the provider deletes your audio or transcripts straight away. Treat cloud voice as kept by the provider under its own policy. <span class="owner">[OWNER: D-K open. ElevenLabs retention: zero retention is recommended; until it is configured and verified on our ElevenLabs account, keep this sentence]</span></p>
 
-      <h3>6. Web answers (signed-in testers)</h3>
-      <p>When a signed-in tester asks a question that needs the web (a search, today's news, a translation or a definition), the question goes through HOTIANA's identity service to <strong>OpenAI</strong> (its Responses API, with web search), which searches the web and returns a short answer. The service refuses questions that contain an email address, a web address, a phone number, a street address, a postal code or map coordinates, and asks OpenAI not to store the request. Your account identity is not sent to OpenAI. Asking OpenAI not to store the request is not a guarantee about OpenAI's own logs, which follow OpenAI's policy.</p>
-
-      <h3>7. Services you connect yourself</h3>
-      <p>You can connect HOTIANA to other online services (MCP connections). Before you sign in to one, HOTIANA shows which server it will connect to and what that server asks for. Data goes only to that server, for the calls you choose.</p>
-      <p>If you are signed in and add a connection to your account, HOTIANA saves the connection's settings to your HOTIANA account so your other devices can use it: the connection's ID, name and web address, its privacy tier and refresh schedule, whether it needs sign-in, the tools and items you selected, how they appear on Home, and when they were changed. <strong>Access and refresh tokens are never part of this.</strong> Connections you keep on one device only are not saved to your account. These settings are kept until you remove the connection or delete your account. <span class="owner">[OWNER: the account connection-settings route (/v1/account/mcp-connections) is not on the serving identity service (504e51b), so today nothing is saved to the account. Before it goes live, it must delete these settings when the connection is removed and when the account is deleted. Then confirm this paragraph and the matching rows in the retention table and on the deletion page.]</span></p>
-      <p>When you disconnect, HOTIANA asks the service to revoke its token, then deletes the token and the settings from your phone. Revocation depends on that service; it does not erase what the service already holds.</p>
+      <h3>7. Google Play services</h3>
+      <p>HOTIANA uses Google Play services for Google sign-in. The Play edition does not start Firebase Cloud Messaging, does not include the Google Home APIs, and does not send crash reports. It does not request SMS or Call Log permissions, background location or the advertising ID permission.</p>
 
       <h3 id="computer">8. Your own computer (optional)</h3>
-      <p>If you link HOTIANA with the HOTIANA Companion app on your own Windows computer, data travels directly between your phone and that computer. It does not pass through HOTIANA's servers: our identity service only keeps the list of computers linked to your account (see the retention table) and tells your phone each computer's network name. The link runs over a private Tailscale network that you install on both devices and sign in to yourself; Tailscale encrypts the connection, and HOTIANA does not add a second layer of encryption on top. HOTIANA only connects to computer addresses on your Tailscale network, and every request from the phone is signed with a key kept in your phone's Android Keystore.</p>
+      <p>If you pair HOTIANA with your own computer, screen, audio, input, notifications you choose to show there, and files or text you choose to send travel directly between your phone and that computer over your Tailscale network, which encrypts them. They do not pass through HOTIANA's servers. Our identity service lists your linked computers and their network names. Every phone request is signed with a key kept in Android Keystore.</p>
       <ul>
-        <li><strong>Desk (using your computer from the phone):</strong> your computer's screen and sound come to the phone, and your touches and typing go to the computer while a Desk session is open. If you turn on <strong>Sync text clipboard</strong> (off by default), clipboard text is copied both ways during the session. If you choose <strong>Use as PC microphone</strong>, your phone's microphone audio goes to the computer.</li>
-        <li><strong>Sign-in codes:</strong> you can send a sign-in code from a notification to your computer after a fresh fingerprint or face check. It expires on the computer within 30 seconds.</li>
-        <li><strong>Call and message alerts:</strong> if you turn on <strong>Share call and message alerts</strong>, your computer is told that a call, message or notification arrived from an app you chose, with times only. No app name, caller, title or message text is sent this way.</li>
-        <li><strong>Phone link</strong> <span class="owner">[OWNER: phone link is not yet merged into the release build; remove this item if it does not ship]</span>:
-          <ul>
-            <li><strong>Show my notifications on this PC</strong> (off until you turn it on): for apps you choose, the app name, title (often the sender's name) and text (up to 600 characters) of new notifications. Notifications that look like sign-in codes, are marked secret, are calls, or come from apps you did not choose are not sent. The computer keeps them in memory only, at most 60, for up to 6 hours.</li>
-            <li><strong>Reply and dismiss from the PC</strong> (a separate switch): your computer can send a reply or dismiss a notification. The phone carries it out through the original app's own notification buttons, also while the phone is locked.</li>
-            <li><strong>Send text to PC:</strong> when you tap it, your phone's current clipboard text (up to 3 KB) is sent once. Text marked sensitive, or that looks like a code, is refused. The computer holds it for 2 minutes and never puts it on its own clipboard by itself.</li>
-            <li><strong>Share &rsaquo; Send to PC:</strong> files you share (up to 20 at a time) are saved in the HOTIANA Transfers folder on your computer, and stay there until you delete them.</li>
-            <li><strong>Receive files and text</strong> (a switch): your computer can offer files and text to the phone. Nothing is copied or saved until you tap it; files are saved in Download/Hotiana on the phone.</li>
-          </ul></li>
-        <li><strong>Agents on your computer</strong> (not in the Google Play edition): if your computer runs HOTIANA's agent helper, you can send an instruction (up to 8,000 characters) from the phone to an AI agent running there, such as Claude Code or Codex, and see its latest output. The agent runs under your own sign-in with that AI's provider (for example Anthropic or OpenAI), which receives your instruction under its own policy. When an agent finishes, the phone shows a notification naming the agent. <span class="owner">[OWNER: confirm no Play route (including voice) reaches PC agents; name the model provider behind the OpenClaw agent if it ships]</span></li>
-      </ul>
-      <p>The Windows companion is a preview and is not yet generally available. What reaches your computer is stored there, not by us, and is deleted there.</p>
-
-      <h3>9. Maps, places and directions</h3>
-      <ul>
-        <li><strong>Google Play edition:</strong> map, place search and navigation screens are hidden. When you ask for directions, HOTIANA hands the destination to your default maps app, which handles it under its own policy. One assistant feature still uses <strong>Mapbox</strong>: when you ask it to prepare a pickup errand, the shop and item you name, your approximate location and your language are sent to Mapbox to find nearby shops (<a href="https://www.mapbox.com/legal/privacy">Mapbox privacy policy</a>). <span class="owner">[OWNER: the errand tool (prepare_pickup_errand) has no Play gate; keep this sentence, or gate it off in the Play build and delete it]</span></li>
-        <li><strong>Direct-install test builds:</strong> when you use HOTIANA's map, place search or navigation, your search text and location are sent to <strong>Mapbox</strong> to return results, map tiles and routes. Mapbox's software can also send diagnostic and usage information about the map to Mapbox.</li>
+        <li><strong>Desk:</strong> while a session is open, the computer's screen and sound come to the phone, and touches and typing go to the computer. <strong>Sync text clipboard</strong> is off by default and copies text both ways while focused. <strong>Use as PC microphone</strong> sends phone microphone audio to the computer when you choose it.</li>
+        <li><strong>Sign-in codes:</strong> sending a code requires a fresh fingerprint or face check. The code expires on the computer within 30 seconds.</li>
+        <li><strong>Call and message alerts:</strong> <strong>Share call and message alerts</strong> sends only the kind of alert, random IDs, times and sequence, with a 60-second expiry. No app name, caller, title or message text is sent this way.</li>
+        <li><strong>Show my notifications on this PC:</strong> for apps you choose, the app label, title (which may name the sender) and up to 600 characters of notification text are sent. Code-like, secret and call notifications are excluded. The computer keeps at most 60 per phone, in memory only, for up to 6 hours.</li>
+        <li><strong>Reply and dismiss from the PC:</strong> a separate switch lets the computer use the original app's notification actions, including while the phone is locked.</li>
+        <li><strong>Send text to PC:</strong> tapping the button reads the clipboard once and sends up to 3,072 bytes. Sensitive or code-like text is refused. The computer holds it for 2 minutes and never writes its clipboard automatically.</li>
+        <li><strong>Share &rsaquo; Send to PC:</strong> up to 20 files per send are saved in HOTIANA Transfers on your computer and stay until you delete them.</li>
+        <li><strong>Receive files and text:</strong> nothing is copied or saved until you tap it. Received files are checked with SHA-256 and saved to Download/Hotiana on the phone.</li>
       </ul>
 
-      <h3>10. Google Play services and Firebase</h3>
-      <ul>
-        <li><strong>Google sign-in</strong> uses Google Play services. Google processes the sign-in under its own policy.</li>
-        <li><strong>Firebase Cloud Messaging</strong> is included in the app. In the Google Play edition it is not started and no push token is issued. In direct-install test builds it can be used to wake HOTIANA for HOTIANA-to-HOTIANA calls and messages; Google then holds a registration token for your installation. <span class="owner">[OWNER: confirm]</span></li>
-        <li><strong>Google Play</strong> delivers the app and the extra files it downloads from Google Play (such as on-device speech models), under Google's policy.</li>
-      </ul>
+      <h3>9. Reporting an AI reply</h3>
+      <p>If you report an AI reply and confirm sending it after a preview and a device check (fingerprint, face or PIN), HOTIANA sends our identity service the reply text (up to 20,000 characters), your chosen reason (offensive, harmful, wrong or other) and the app version. No account, name or email is attached. We keep reports for 30 days to review them, then they are deleted automatically. Check the preview because the reply text itself may contain personal information.</p>
+      <p>You can also keep a report on your phone without sending it, up to 50 per account while signed in. Account deletion cannot identify reports sent to us because they carry no account.</p>
 
-      <h3>11. Reports you choose to send</h3>
-      <ul>
-        <li><strong>&ldquo;Report this reply&rdquo;</strong> (both editions) saves an AI answer you flag, with the reason you picked (offensive, harmful, wrong or other), on your phone while you are signed in, up to 50 reports per account. You can export a saved report to an app you choose. If sending to us is turned on in your build, you can also send a report to us: you see exactly what will be sent, tap Confirm, and confirm again with your fingerprint, face or device PIN, for each report. Only the answer text (up to 20,000 characters), the reason and the app version are sent, over HTTPS, to HOTIANA's identity service. No account, name, email or sign-in token is sent with it, and the service refuses a report that carries one. To limit repeated reports, the service uses a keyed one-way code of your network address and does not store the address. The answer text itself may contain personal information, so check it before you send. <span class="owner">[OWNER: sending is off in the 1846 source and the report intake is not deployed; deploy it, put its real HTTPS address in the release build, and confirm who on our side reads reports]</span></li>
-        <li><strong>Automatic crash reports</strong> (direct-install test builds only, off until you turn them on): the report contains a report ID, the app version, the Android version, the phone model and brand, the error's stack trace with up to 20 recent in-app steps, the crash time and the app start time. It is sent to the developer's own computer over a private Tailscale network. The Google Play edition has no automatic crash reporting of ours.</li>
-        <li><strong>&ldquo;Report a problem&rdquo;</strong> (direct-install test builds only): you write the report, can attach screenshots or a recording of HOTIANA's own window, and choose whether to include diagnostics (a filtered app log and device and performance state). It is sent to the developer's own computer only when you send it.</li>
-      </ul>
+      <h3>10. Home media and news</h3>
+      <p>Home includes a YouTube panel, YouTube video and Google News widgets, and headlines from DW, Al Jazeera and Bloomberg. Loading this content contacts the relevant provider, which handles the request under its own policy.</p>
 
-      <h3>12. Local weather (both editions)</h3>
-      <p>HOTIANA shows the current weather on Home. This setting, &ldquo;Local weather&rdquo;, is on by default. It is used only if you give HOTIANA location access. While Home is on screen, it sends your approximate position to <strong>Open-Meteo</strong> (open-meteo.com), at most once every 10 minutes after a successful update (sooner if an update failed or you tap to retry). The position is rounded to two decimal places (about 1 kilometre) before it leaves the phone, and no account or device identifier is sent. Open-Meteo returns the current conditions. You can turn it off in Settings under &ldquo;Local weather&rdquo;. <span class="owner">[OWNER: declare approximate location shared with Open-Meteo in the Play Data safety form]</span></p>
-
-      <h3>13. Home controls (direct-install test builds only)</h3>
-      <p>The House space controls smart-home devices. It is not in the Google Play edition, and in test builds it is off until you turn it on. If you connect Google Home and accept Google's own permission screen, HOTIANA uses <strong>Google's Home APIs</strong> through Google Play services. Google returns your homes, rooms and devices and their current state, and carries out the commands you give, such as turning a light off. Google handles this data under its own policy.</p>
-
-      <h3>14. Web, media and news</h3>
-      <ul>
-        <li><strong>Google Play edition:</strong> Home can show a YouTube panel, YouTube video and Google News widgets you add, and news headlines from DW, Al Jazeera and Bloomberg. When one of these loads, its content comes directly from <strong>Google (YouTube, Google News)</strong> or that broadcaster. They see your IP address and the request, may set cookies, may show their own ads inside their player, and handle your requests under their own policies. <span class="owner">[OWNER: confirm which of these Home panels and widgets are reachable in the Play build]</span></li>
-        <li><strong>Direct-install test builds</strong> also include a web browser, a media player and a TV space. Web pages, videos, live TV streams and headlines you open there are loaded directly from the sites that provide them, under their own policies.</li>
-      </ul>
-      <p><strong>About encryption:</strong> we state TLS for the identity service, the phone relay, the HOTIANA Care desk and report sending, and Tailscale encryption for the computer link and crash reports. We do not claim that every connection in every feature is encrypted.</p>
-
-      <h3 id="care">15. HOTIANA Care (by invitation)</h3>
-      <p>HOTIANA Care is a separate service in which real people help a family, for example an older parent and their children. It is used only if a family member enters the family's <strong>Care key</strong> in <strong>Settings &rsaquo; Connections &rsaquo; HOTIANA Care</strong>. The key is stored encrypted on the phone.</p>
-      <p>With a Care key set, a connected AI can pass on a request for the care team, such as &ldquo;tell my son my medicine has run out&rdquo;. Nothing is sent on the first try: the AI must read the exact words back, and only after you say yes are they sent. HOTIANA then sends the words of the request (up to 1,000 characters), which AI or app it came from, and the family's key to the HOTIANA Care desk at <code>care.hotiana.ca</code>, over HTTPS. The care team sees the request and contacts the family. A request can contain health or other personal information, because it contains whatever you asked to pass on. <span class="owner">[OWNER: the Care desk is not deployed yet. Confirm whether the Care key ships in the Google Play edition (it is in the 1846 source); if it does, state where the desk runs, who on the care team can see requests, how they contact the family (e.g. WhatsApp) and how long requests are kept, and add it to the retention table]</span></p>
+      <p><strong>About encryption:</strong> we state TLS only for the identity service and the bridge relay, and Tailscale encryption for your own computer. We do not claim that every connection in every feature is encrypted.</p>
     </section>
 
     <section id="recipients">
       <h2>Who receives data</h2>
-      <p>These are the companies and services that can receive data from HOTIANA, and why. Each one receives data only when you use the feature named.</p>
+      <p>Each recipient receives data when you use the feature described above.</p>
       <div class="table-wrap"><table>
-        <thead><tr><th>Recipient</th><th>What for</th><th>When</th></tr></thead>
+        <thead><tr><th>Recipient</th><th>What for</th></tr></thead>
         <tbody>
-          <tr><td data-label="Recipient"><strong>Google Cloud</strong> (Cloud Run, Firestore, Cloud Logging), on our behalf</td><td data-label="What for">Runs HOTIANA's identity service and phone relay, stores account records and keeps service logs</td><td data-label="When">When you sign in, link a device, let an outside AI act on your phone, use cloud voice or web answers, or send us a report</td></tr>
-          <tr><td data-label="Recipient"><strong>Google</strong> (Google sign-in through Google Play services)</td><td data-label="What for">Signing in with your Google account</td><td data-label="When">When you sign in</td></tr>
-          <tr><td data-label="Recipient"><strong>Google</strong> (Google Play, YouTube, Google News)</td><td data-label="What for">App and speech-model downloads; videos and news you open on Home</td><td data-label="When">When you install or download, or a YouTube or Google News panel loads</td></tr>
-          <tr><td data-label="Recipient"><strong>Google Firebase Cloud Messaging</strong></td><td data-label="What for">Waking HOTIANA for HOTIANA-to-HOTIANA calls and messages</td><td data-label="When">Direct-install test builds only; not started in the Google Play edition</td></tr>
-          <tr><td data-label="Recipient"><strong>ElevenLabs</strong></td><td data-label="What for">Cloud voice: speech recognition, replies and spoken voice</td><td data-label="When">Only during a cloud voice conversation you start</td></tr>
-          <tr><td data-label="Recipient"><strong>OpenAI</strong></td><td data-label="What for">Web answers (search, news, translation, definitions); not used for voice in the Google Play edition</td><td data-label="When">When a signed-in tester asks for a web answer; also when an agent on your own computer runs under your own OpenAI sign-in (section 8)</td></tr>
-          <tr><td data-label="Recipient"><strong>Open-Meteo</strong></td><td data-label="What for">Local weather</td><td data-label="When">While Home is on screen, if &ldquo;Local weather&rdquo; is on and you allowed location</td></tr>
-          <tr><td data-label="Recipient"><strong>Mapbox</strong></td><td data-label="What for">Maps, place search and directions</td><td data-label="When">Google Play edition: only when you ask the assistant to prepare a pickup errand. Direct-install test builds: also maps, place search and navigation</td></tr>
-          <tr><td data-label="Recipient">The <strong>outside AI</strong> you allow (for example Anthropic for Claude, Google for Gemini, OpenAI for ChatGPT)</td><td data-label="What for">The actions and answers you allowed</td><td data-label="When">When that AI acts on your phone or you release a vault answer to it</td></tr>
-          <tr><td data-label="Recipient"><strong>Services you connect yourself</strong> (MCP servers) and the apps you hand a request to</td><td data-label="What for">The calls and requests you choose</td><td data-label="When">When you use them</td></tr>
-          <tr><td data-label="Recipient"><strong>Your own computer</strong>, and <strong>Tailscale</strong> for the private network you install yourself</td><td data-label="What for">Linking your phone and computer; agents on your computer reach the AI provider you signed in to there</td><td data-label="When">When you link them and use the features in section 8</td></tr>
-          <tr><td data-label="Recipient"><strong>HOTIANA Care</strong> desk</td><td data-label="What for">Care requests for real people to act on</td><td data-label="When">Only with a Care key set, after you confirm each request</td></tr>
-          <tr><td data-label="Recipient"><strong>DW, Al Jazeera, Bloomberg</strong></td><td data-label="What for">News headlines on Home</td><td data-label="When">When a headline panel loads</td></tr>
+          <tr><td data-label="Recipient"><strong>Google Cloud</strong> (Cloud Run, Firestore, Cloud Logging), on our behalf</td><td data-label="What for">Runs the identity service and bridge relay and stores account records and backups in Toronto; also handles AI reply reports and service logs.</td></tr>
+          <tr><td data-label="Recipient"><strong>Google</strong></td><td data-label="What for">Google sign-in, Google Play app delivery, and YouTube or Google News content on Home.</td></tr>
+          <tr><td data-label="Recipient"><strong>ElevenLabs</strong></td><td data-label="What for">Cloud voice audio, conversation text and replies.</td></tr>
+          <tr><td data-label="Recipient"><strong>OpenAI</strong></td><td data-label="What for">Web answers through its API with web search.</td></tr>
+          <tr><td data-label="Recipient"><strong>Mapbox</strong></td><td data-label="What for">Place search, including shops for errands.</td></tr>
+          <tr><td data-label="Recipient"><strong>Open-Meteo</strong></td><td data-label="What for">Local weather.</td></tr>
+          <tr><td data-label="Recipient">The <strong>outside AI</strong> you connect (for example Anthropic for Claude, Google for Gemini, OpenAI for ChatGPT)</td><td data-label="What for">Requests, action results and vault answers you approve.</td></tr>
+          <tr><td data-label="Recipient"><strong>Services you connect yourself</strong> (MCP servers)</td><td data-label="What for">The calls you choose.</td></tr>
+          <tr><td data-label="Recipient"><strong>Your own computer</strong>, using <strong>Tailscale</strong></td><td data-label="What for">Screen, audio, input, chosen notifications, files and text.</td></tr>
+          <tr><td data-label="Recipient"><strong>DW, Al Jazeera, Bloomberg</strong></td><td data-label="What for">Headlines on Home.</td></tr>
         </tbody>
       </table></div>
-      <p>Every server that HOTIANA contacts also sees ordinary network information, such as your IP address and the time of the request. Recipients other than Google Cloud handle data under their own privacy policies.</p>
-    </section>
-
-    <section id="messages">
-      <h2>Messages and call history (SMS and Call Log)</h2>
-      <ul>
-        <li><strong>Google Play edition:</strong> HOTIANA does not request or use SMS, MMS or Call Log permissions, and cannot read your text messages or call history. When you ask it to call or text someone, it opens your default phone or messaging app with the number or message filled in, and you finish there. If you grant notification access, HOTIANA can show message notifications and send a reply you approve through the messaging app's own reply action. Because message notifications contain message text, that text can reach a cloud voice provider when you ask the assistant to read it (see <a href="#cloud-voice">Cloud voice</a>).</li>
-        <li><strong>Direct-install test builds:</strong> HOTIANA asks for SMS and Call Log access <strong>only when you choose to make it your default SMS app or default phone app</strong>. With that access it reads your messages (sender, text, time, attachments) and recent calls (number, date, duration, type) so it can show them, let you reply or call back, and send messages you confirm. This information stays on your phone. It is only shared with a connected AI if you ask for something that needs it and the result is returned through the bridge described above. You can remove the permissions or pick a different default app at any time in Android settings.</li>
-      </ul>
     </section>
 
     <section>
-      <h2>Other permissions</h2>
-      <p>Android asks you before HOTIANA can use any of these. Microphone (voice and the wake word), location (local weather, and answers that need where you are), contacts and calendar (finding people and events you ask about), notification access (showing and replying to notifications), exact alarms (reminders you set) and phone (calls you start) are all optional; the app keeps working without them. In the Google Play edition HOTIANA asks only for approximate location, never precise location, and it has no background-location permission. You can revoke any of them in Android settings.</p>
-    </section>
-
-    <section>
-      <h2>HOTIANA Vantage: the accessibility service</h2>
-      <p>This section applies only to HOTIANA Vantage test builds. Vantage includes an optional Android accessibility service called <strong>&ldquo;Vantage assistive notifications&rdquo;</strong>. It places a thin strip along the top edge of the screen. Pulling down from that strip opens larger notification controls, and a button can open Android's own notification shade.</p>
-      <ul>
-        <li><strong>What it reads:</strong> only the position and movement of touches that start in that strip or inside the expanded controls.</li>
-        <li><strong>What it does not do:</strong> it does not read screen text, does not receive accessibility events, does not inspect other apps and does not perform gestures or taps for you.</li>
-        <li><strong>Notification content</strong> shown in the controls comes from the separate notification-access permission, not from the accessibility service.</li>
-        <li><strong>Consent first:</strong> on first use Vantage shows a disclosure and asks you to choose &ldquo;I understand and continue&rdquo; or &ldquo;Continue without assistive access&rdquo;. Refusing keeps the strip off and the app usable. Even after you consent, the strip stays off until you also grant access in Android settings and switch it on. You can turn the strip off or revoke access in Android settings at any time.</li>
-        <li>Nothing read by these assistive features leaves your phone unless you take an explicit action, such as tapping Send on a reply.</li>
-      </ul>
-      <p>The HOTIANA app on Google Play does not include this accessibility service.</p>
+      <h2>Permissions</h2>
+      <p>Android asks you before HOTIANA can use any of these. Microphone (voice), approximate location (places and weather), contacts and calendar (finding people and events you ask about), notification access (showing and replying to notifications), and phone (calls you start or answer) are all optional; the app keeps working without them. You can revoke any of them in Android settings.</p>
     </section>
 
     <section>
@@ -258,23 +148,20 @@
       <div class="table-wrap"><table>
         <thead><tr><th>Data</th><th>Where</th><th>Kept for</th></tr></thead>
         <tbody>
-          <tr><td data-label="Data">Vault, conversations, settings, widget entries, tokens</td><td data-label="Where">Your phone</td><td data-label="Kept for">Until you delete them, clear the app's storage, delete your account, or uninstall.</td></tr>
-          <tr><td data-label="Data">Action record</td><td data-label="Where">Your phone</td><td data-label="Kept for">90 days, at most 10,000 actions, or until you delete it or your account. <span class="owner">[OWNER: only if the action record ships]</span></td></tr>
-          <tr><td data-label="Data">Notification history for apps you chose</td><td data-label="Where">Your phone</td><td data-label="Kept for">The current day, at most 400 notifications. Older days are removed the next time the history is used.</td></tr>
-          <tr><td data-label="Data">Account record (account ID, name, email address, picture link, linked Google sign-in)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">Until you delete your account. Name, email address and picture link are removed at once when you delete; the rest is removed 7 days later. <span class="owner">[OWNER: confirm; the scheduled purge job (deploy/purge-job.sh) must be running]</span></td></tr>
-          <tr><td data-label="Data">Sign-in session records (account ID, installation ID, a one-way code of the session secret, sign-in method, app type and dates)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">A session stops working when you sign out, or 30 days after it was last renewed. Its record is kept, marked as ended, until you delete your account, and is removed with the account 7 days after deletion. <span class="owner">[OWNER: confirm]</span></td></tr>
-          <tr><td data-label="Data">Access grants for outside AIs (which AI, which phone and TVs, the permissions you chose, a one-way code of its secret and dates)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">Access stops when you revoke it, or 30 days after the AI last renewed its access. The record is deleted 30 days after that expiry date, so up to about 60 days after the AI last used it, even if you revoked it sooner. If you delete your account first, it is removed with the account 7 days after deletion. <span class="owner">[OWNER: confirm the Firestore TTL policy on deleteAt is enabled]</span></td></tr>
-          <tr><td data-label="Data">Linked devices: phones, computers and TVs (installation ID, device name, platform, app version and, for phones and TVs, a key fingerprint)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">Removing a device stops it at once, but its record is kept, marked as removed, until you delete your account. When you delete your account, device names are removed at once and the records 7 days later. <span class="owner">[OWNER: confirm]</span></td></tr>
-          <tr><td data-label="Data">Settings of services you connected and saved to your account</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">Until you remove the connection or delete your account. <span class="owner">[OWNER: not live; see section 7]</span></td></tr>
-          <tr><td data-label="Data">Record of sign-in methods added or removed</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">90 days, or until account deletion. <span class="owner">[OWNER: confirm the Firestore TTL policy]</span></td></tr>
-          <tr><td data-label="Data">Request counters (keyed one-way codes of your IP address, installation ID, session or account)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">Until the counting window ends: 10 seconds to 24 hours. <span class="owner">[OWNER: confirm the Firestore TTL policy]</span></td></tr>
-          <tr><td data-label="Data">Retired installation code (a one-way code of the deleted installation's random ID, with no name, email or account)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">2 years, so credentials from a deleted installation cannot be reused.</td></tr>
-          <tr><td data-label="Data">Action receipts for outside AIs</td><td data-label="Where">HOTIANA phone relay (memory only)</td><td data-label="Kept for">While your phone stays connected, and no longer than 24 hours. <span class="owner">[OWNER: confirm]</span></td></tr>
-          <tr><td data-label="Data">Service logs (identity service and relay): request logs with your IP address, user agent, the address requested, time, status and duration; and each service's own event and error logs, which contain no request content</td><td data-label="Where">Google Cloud Logging</td><td data-label="Kept for">30 days. <span class="owner">[OWNER: confirm, or add Cloud Logging exclusions and change this row]</span></td></tr>
-          <tr><td data-label="Data">AI reply reports you send us (answer text, reason, app version, time received; no account)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">30 days, then deleted automatically. <span class="owner">[OWNER: confirm; the report intake is not deployed yet]</span></td></tr>
-          <tr><td data-label="Data">Phone notifications, text and files sent to your computer</td><td data-label="Where">Your computer</td><td data-label="Kept for">Notifications: in memory only, at most 60, up to 6 hours. Text: 2 minutes. Files: until you delete them. <span class="owner">[OWNER: phone link only if it ships]</span></td></tr>
-          <tr><td data-label="Data">Crash reports and problem reports (direct-install test builds)</td><td data-label="Where">Developer's computer</td><td data-label="Kept for"><span class="owner">[OWNER: confirm period]</span></td></tr>
-          <tr><td data-label="Data">Data sent to an outside AI, voice, web-answer, weather, map, video or news, Google Home, HOTIANA Care or connected services</td><td data-label="Where">That provider</td><td data-label="Kept for">Under that provider's policy.</td></tr>
+          <tr><td data-label="Data">Vault, conversations, settings and tokens</td><td data-label="Where">Your phone</td><td data-label="Kept for">Until you delete them, clear the app's storage, or uninstall.</td></tr>
+          <tr><td data-label="Data">Action record</td><td data-label="Where">Your phone</td><td data-label="Kept for">90 days, up to 10,000 actions, or until you delete it or your account.</td></tr>
+          <tr><td data-label="Data">Notification history for chosen apps</td><td data-label="Where">Your phone</td><td data-label="Kept for">The current day, at most 400 notifications, swept when used.</td></tr>
+          <tr><td data-label="Data">Account record (ID, name, email, picture link)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">Until account deletion. Name, email and picture link are removed at once when deletion is processed.</td></tr>
+          <tr><td data-label="Data">Sign-in sessions and enrolled devices</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">A session ends 30 days after its last renewal. Enrolled phones, TVs and computers stay until you remove them or delete your account. Sign-in method history is kept 90 days.</td></tr>
+          <tr><td data-label="Data">Connected-AI access</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">30 days from its last renewal, or until revoked. The record is deleted 30 days after it ends.</td></tr>
+          <tr><td data-label="Data">Bridge requests and results</td><td data-label="Where">HOTIANA relay</td><td data-label="Kept for">Not stored. Finished-action receipts remain in memory only while your phone stays connected, for at most 24 hours.</td></tr>
+          <tr><td data-label="Data">AI reply reports</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">30 days, then deleted automatically.</td></tr>
+          <tr><td data-label="Data">Service logs (request metadata, including IP address)</td><td data-label="Where">Google Cloud Logging</td><td data-label="Kept for">30 days.</td></tr>
+          <tr><td data-label="Data">Abuse-prevention counters (one-way codes of an IP address, installation, session or account)</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">At most 24 hours.</td></tr>
+          <tr><td data-label="Data">Retired installation code</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">2 years after account deletion; a one-way code with no name, email or account attached, to prevent reuse of a deleted account's installation.</td></tr>
+          <tr><td data-label="Data">Backups of the identity database</td><td data-label="Where">Google Cloud, Toronto</td><td data-label="Kept for">Encrypted daily backups: 30 days. Point-in-time recovery: 7 days. Deleted data leaves backups when they expire.</td></tr>
+          <tr><td data-label="Data">Phone notifications, text and files sent to your computer</td><td data-label="Where">Your computer</td><td data-label="Kept for">Notifications: in memory only, at most 60 per phone, up to 6 hours. Text: 2 minutes. Files: until you delete them.</td></tr>
+          <tr><td data-label="Data">Data sent to AI, voice, web-answer, weather, map, media, news or connected services</td><td data-label="Where">That provider</td><td data-label="Kept for">Under that provider's policy.</td></tr>
         </tbody>
       </table></div>
     </section>
@@ -282,44 +169,38 @@
     <section>
       <h2>Deleting your data</h2>
       <ul>
-        <li><strong>In the app:</strong> open Settings, then Account, then <strong>Delete my HOTIANA account and data</strong>, and tap <strong>Confirm account deletion</strong>. For your protection, our server accepts a deletion only within 10 minutes of signing in. If your sign-in is older, HOTIANA says so and shows a <strong>Sign in with Google again</strong> button on the same screen; sign in, then confirm again. Step-by-step instructions, and exactly what is deleted and when, are on the <a href="/delete-account/">account deletion page</a>. <span class="owner">[OWNER: account deletion is switched off on the serving identity service (504e51b); switch it on and test it end to end before publishing, as the deletion page notice says]</span></li>
-        <li><strong>By email:</strong> write to <span class="owner">[OWNER: monitored privacy contact email]</span> from the email address of your HOTIANA account. We confirm the request and then delete the account on our servers in the same way as in the app. See the <a href="/delete-account/">account deletion page</a>. <span class="owner">[OWNER: no operator tool can delete an account from an email address yet; build it, or remove this bullet and the email section of the deletion page]</span></li>
-        <li><strong>Outside AIs:</strong> to stop one AI without deleting your account, revoke it in <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>.</li>
-        <li><strong>Without an account:</strong> we hold no account or profile about you. If your phone contacted our services, for example in a refused sign-in attempt, only the request logs and request counters described above remain, and they are deleted within 30 days. To erase everything on the phone at once, use Android Settings &rsaquo; Apps &rsaquo; HOTIANA &rsaquo; Storage &rsaquo; Clear storage, or uninstall the app. Because HOTIANA's data is excluded from backups, this removes it permanently. You can also ask HOTIANA to forget individual facts, remove documents and forget people added from your contacts.</li>
-        <li><strong>Signing out, disconnecting or uninstalling</strong> stops future use but does not delete your account.</li>
-        <li>Data you released to an outside AI, a voice provider, a service you connected, HOTIANA Care or your own computer must be deleted there.</li>
+        <li><strong>In the app:</strong> <strong>Settings &rsaquo; Account &rsaquo; Delete my HOTIANA account and data</strong>. After a fresh sign-in confirmation, we revoke every connected AI and enrolled device, remove your name, email and picture link at once, and clear HOTIANA's data on this phone once the server confirms. Remaining account records are purged within 7 days and leave backups within 30 days after that. We keep only the one-way installation code described above for 2 years. Signing in again starts a new, empty account.</li>
+        <li><strong>Without the app:</strong> email <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a> from the email address on your HOTIANA account and ask us to delete it. We confirm the request and delete the account and its data the same way within 30 days; the data then leaves backups within 30 days after that. See the <a href="/delete-account/">account deletion page</a> for both routes and their details.</li>
+        <li><strong>On your phone only:</strong> you can ask HOTIANA to forget individual facts, remove documents from the documents shelf, and forget people added from contacts. To erase everything local without deleting your account, use Android Settings &rsaquo; Apps &rsaquo; HOTIANA &rsaquo; Storage &rsaquo; Clear storage, or uninstall. The vault is excluded from backups, so this removes it permanently.</li>
+        <li><strong>Signing out or disconnecting</strong> stops future use but does not by itself delete server records. You can revoke one AI in <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>.</li>
+        <li>Data released to an outside AI or other provider, or sent to your own computer, must be deleted there.</li>
       </ul>
     </section>
 
     <section>
       <h2>No sync, no sale, no ads</h2>
-      <p>HOTIANA does not sync your vault or conversations to any cloud. We do not sell personal data and do not use it for advertising or ad tracking. HOTIANA does not use advertising identifiers and contains no advertising or analytics tools. <span class="owner">[OWNER: confirm against the release bundle's merged manifest that no advertising ID permission is present]</span></p>
-    </section>
-
-    <section>
-      <h2>Open-source components</h2>
-      <p>HOTIANA includes open-source software, including the eSpeak NG speech data used by its on-device voice and an FFmpeg-based audio and video decoder. Their licences and notices are listed in the app. <span class="owner">[OWNER: eSpeak NG (GPL) source-distribution obligations and the FFmpeg decoder's build licensing are under review; publish the exact notices before release]</span></p>
+      <p>HOTIANA does not sync your vault or conversations to any cloud. We do not sell personal data and do not use it for advertising or ad tracking.</p>
     </section>
 
     <section>
       <h2>Children</h2>
-      <p>HOTIANA is intended for adults <span class="owner">[OWNER: D-J open. Confirm the intended audience; 18+ is recommended. Then match the Play Console target age]</span>. It is not directed at children under 13.</p>
+      <p>HOTIANA is for people aged 18 and over. It is not directed at children.</p>
     </section>
 
     <section>
       <h2>Changes</h2>
-      <p>If we change what the apps collect or share, for example when a hidden feature is turned on, we will update this policy and its date before the change ships, and ask for consent in the app where required.</p>
+      <p>If we change what the app collects or shares, for example when a hidden feature is turned on, we will update this policy and its date before the change ships, and ask for consent in the app where required.</p>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>16834981 Canada Inc. &mdash; <span class="owner">[OWNER: monitored privacy contact email]</span>. <span class="owner">[OWNER: mailing address]</span></p>
+      <p>16834981 Canada Inc. &mdash; <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a>. Website: <a href="/">hotiana.ca</a>.</p>
     </section>
   </main>
   <footer>
     <div class="footer-links"><a href="/privacy/" aria-current="page">Privacy policy</a><a href="/delete-account/">Delete your account</a><a href="/support/">Support</a></div>
-    <span>HOTIANA is made by 16834981 Canada Inc., Mississauga, Ontario, Canada.</span>
-    <span>Contact: uzair@hotiana.ca</span>
+    <span>HOTIANA is made by 16834981 Canada Inc.</span>
+    <span>Privacy: <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a></span>
   </footer>
 </div>
 </body>
