@@ -15,7 +15,7 @@
   <main class="policy">
     <section>
       <h1>Privacy policy</h1>
-      <p class="muted">Last updated 23 October 2026</p>
+      <p class="muted">Last updated 5 November 2026</p>
     </section>
 
     <section>
@@ -28,7 +28,7 @@
       <h2>The short version</h2>
       <ul>
         <li><strong>Your vault stays on your phone.</strong> It is not synced to any cloud. HOTIANA turns off Android backup and device-to-device transfer for all of its data.</li>
-        <li><strong>Some things do leave your phone, only when you use a feature that needs it:</strong> signing in, connecting an outside AI to your phone (the bridge), cloud voice, web answers, place search, weather, reporting an AI reply, your own computer, Home media and news, and services you connect yourself. Each is described below with who receives it.</li>
+        <li><strong>Some things do leave your phone, only when you use a feature that needs it:</strong> signing in, connecting an outside AI to your phone (the bridge), cloud voice, web answers, weather, reporting an AI reply, your own computer, Home media and news, your own AI provider, and services you connect yourself. Each is described below with who receives it.</li>
         <li><strong>Nothing from your vault is shared with an outside AI unless you approve that specific answer</strong> with your fingerprint, face or device PIN.</li>
         <li><strong>You decide which outside AI can act on your phone, on which devices and with which permissions.</strong> You can see and revoke each one in <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>.</li>
         <li>We do not sell your data and do not use it for advertising or ad tracking.</li>
@@ -47,8 +47,8 @@
           <tr><td data-label="What"><strong>Settings and preferences</strong></td><td data-label="Details">Stored on your phone only.</td></tr>
           <tr><td data-label="What"><strong>AI replies shared back to HOTIANA</strong></td><td data-label="Details">Kept on your phone, up to 20 outgoing previews and 50 replies per account.</td></tr>
           <tr><td data-label="What"><strong>Action record</strong></td><td data-label="Details">Names, devices, times and outcomes of what connected AIs did on your phone. Never message text, request arguments, phone numbers or keys. Stored encrypted on the phone for 90 days, up to 10,000 actions, and excluded from backup and device transfer. You can view, export or delete it in <strong>Settings &rsaquo; Connections &rsaquo; Action record</strong>.</td></tr>
-          <tr><td data-label="What"><strong>Notifications</strong> (only if you grant notification access)</td><td data-label="Details">App name, sender, title, message text and available actions are read so HOTIANA can show, announce aloud on the phone, dismiss or reply to them. For apps you choose, HOTIANA keeps today's notifications in an encrypted history on the phone, up to 400. Older days are removed the next time the history is used. With cloud voice, notification information you ask it to read is sent to ElevenLabs; see <a href="#cloud-voice">Cloud voice</a>. If you turn on notifications on your linked computer, they are also shown there; see <a href="#computer">Your own computer</a>.</td></tr>
-          <tr><td data-label="What"><strong>On-device speech and assistant processing</strong></td><td data-label="Details">Wake-word, routing and vault lookups run on the phone. HOTIANA can also run Google's Gemma language model entirely on the phone when its model file is present, with no cloud fallback. The Google Play edition does not download this model.</td></tr>
+          <tr><td data-label="What"><strong>Notifications</strong> (only if you grant notification access)</td><td data-label="Details">App name, sender, title, message text and available actions are read so HOTIANA can show, announce aloud on the phone, dismiss or reply to them. If you ask cloud voice or a connected AI about a notification, the words it reads go to that service. For apps you choose, HOTIANA keeps today's notifications in an encrypted history on the phone, up to 400. Older days are removed the next time the history is used. With cloud voice, notification information you ask it to read is sent to ElevenLabs; see <a href="#cloud-voice">Cloud voice</a>. If you turn on notifications on your linked computer, they are also shown there; see <a href="#computer">Your own computer</a>.</td></tr>
+          <tr><td data-label="What"><strong>On-device speech and assistant processing</strong></td><td data-label="Details">Routing and vault lookups run on the phone. HOTIANA can also run Google's Gemma language model entirely on the phone when its model file is present, with no cloud fallback. The Google Play edition does not download this model.</td></tr>
         </tbody>
       </table></div>
       <p>Local storage does not mean HOTIANA never goes online. The next section says when data leaves your phone.</p>
@@ -85,15 +85,17 @@
       <h3>5. Services you connect yourself (MCP connections)</h3>
       <p>You can connect HOTIANA to other online services. Before you sign in, HOTIANA shows which server it will connect to and what that server asks for. Data goes only to that server, for the calls you choose. When you disconnect, HOTIANA revokes the token and deletes it from your phone.</p>
 
-      <h3>6. Web answers, places and weather</h3>
+      <h3>Your own AI provider (optional)</h3>
+      <p>If you add your own OpenRouter key in <strong>Settings &rsaquo; AI providers</strong>, questions you type go from your phone to <strong>OpenRouter</strong> and the maker of the model you chose, under their policies. Nothing from your vault is sent. Your key is stored encrypted on your phone. Remove the key to stop.</p>
+
+      <h3>6. Web answers and weather</h3>
       <ul>
         <li><strong>Web answers:</strong> when you are signed in and ask a general-knowledge question that needs the web, the question text (not your name or email) goes through HOTIANA's identity service to <strong>OpenAI's API with web search</strong>. We ask OpenAI not to store these requests. Questions containing an email address, web address, coordinates, phone number, street address or postal code are refused before anything is sent.</li>
-        <li><strong>Mapbox:</strong> when you ask HOTIANA to find a place, for example a shop for a pickup errand, your search words, approximate location and language are sent to Mapbox to return results (<a href="https://www.mapbox.com/legal/privacy">Mapbox privacy policy</a>). Map screens are hidden in the Google Play edition.</li>
         <li><strong>Local weather:</strong> while Home is showing, your position, rounded to two decimal places (about 1 km), is sent to <strong>Open-Meteo</strong> to fetch the weather. No account or device identifier is sent. Updates occur at most once every 10 minutes after success, sooner after failure or if you tap to retry. &ldquo;Local weather&rdquo; is on by default and needs location permission; you can turn it off in Settings.</li>
       </ul>
 
       <h3>7. Google Play services</h3>
-      <p>HOTIANA uses Google Play services for Google sign-in. The Play edition does not start Firebase Cloud Messaging, does not include the Google Home APIs, and does not send crash reports. It does not request SMS or Call Log permissions, background location or the advertising ID permission.</p>
+      <p>HOTIANA uses Google Play services for Google sign-in. The Play edition does not start Firebase Cloud Messaging, does not use the Google Home APIs, and does not send crash reports. It does not request SMS or Call Log permissions, background location or the advertising ID permission.</p>
 
       <h3 id="computer">8. Your own computer (optional)</h3>
       <p>If you pair HOTIANA with your own computer, screen, audio, input, notifications you choose to show there, and files or text you choose to send travel directly between your phone and that computer over your Tailscale network, which encrypts them. They do not pass through HOTIANA's servers. Our identity service lists your linked computers and their network names. Every phone request is signed with a key kept in Android Keystore.</p>
@@ -113,7 +115,7 @@
       <p>You can also keep a report on your phone without sending it, up to 50 per account while signed in. Account deletion cannot identify reports sent to us because they carry no account.</p>
 
       <h3>10. Home media and news</h3>
-      <p>Home includes a YouTube panel, YouTube video and Google News widgets, and headlines from DW, Al Jazeera and Bloomberg. Loading this content contacts the relevant provider, which handles the request under its own policy.</p>
+      <p>Home includes a YouTube panel and YouTube video and Google News widgets. Loading this content contacts the relevant provider, which handles the request under its own policy.</p>
 
       <p><strong>About encryption:</strong> we state TLS only for the identity service and the bridge relay, and Tailscale encryption for your own computer. We do not claim that every connection in every feature is encrypted.</p>
     </section>
@@ -128,19 +130,18 @@
           <tr><td data-label="Recipient"><strong>Google</strong></td><td data-label="What for">Google sign-in, Google Play app delivery, and YouTube or Google News content on Home.</td></tr>
           <tr><td data-label="Recipient"><strong>ElevenLabs</strong></td><td data-label="What for">Cloud voice audio, conversation text and replies.</td></tr>
           <tr><td data-label="Recipient"><strong>OpenAI</strong></td><td data-label="What for">Web answers through its API with web search.</td></tr>
-          <tr><td data-label="Recipient"><strong>Mapbox</strong></td><td data-label="What for">Place search, including shops for errands.</td></tr>
           <tr><td data-label="Recipient"><strong>Open-Meteo</strong></td><td data-label="What for">Local weather.</td></tr>
           <tr><td data-label="Recipient">The <strong>outside AI</strong> you connect (for example Anthropic for Claude, Google for Gemini, OpenAI for ChatGPT)</td><td data-label="What for">Requests, action results and vault answers you approve.</td></tr>
+          <tr><td data-label="Recipient"><strong>OpenRouter</strong> and the maker of the model you chose</td><td data-label="What for">Questions you type, if you add your own key.</td></tr>
           <tr><td data-label="Recipient"><strong>Services you connect yourself</strong> (MCP servers)</td><td data-label="What for">The calls you choose.</td></tr>
           <tr><td data-label="Recipient"><strong>Your own computer</strong>, using <strong>Tailscale</strong></td><td data-label="What for">Screen, audio, input, chosen notifications, files and text.</td></tr>
-          <tr><td data-label="Recipient"><strong>DW, Al Jazeera, Bloomberg</strong></td><td data-label="What for">Headlines on Home.</td></tr>
         </tbody>
       </table></div>
     </section>
 
     <section>
       <h2>Permissions</h2>
-      <p>Android asks you before HOTIANA can use any of these. Microphone (voice), approximate location (places and weather), contacts and calendar (finding people and events you ask about), notification access (showing and replying to notifications), and phone (calls you start or answer) are all optional; the app keeps working without them. You can revoke any of them in Android settings.</p>
+      <p>Android asks you before HOTIANA can use any of these. Microphone (voice), approximate location (weather), contacts and calendar (finding people and events you ask about), notification access (showing and replying to notifications), and phone (calls you start or answer) are all optional; the app keeps working without them. You can revoke any of them in Android settings.</p>
     </section>
 
     <section>
@@ -161,7 +162,7 @@
           <tr><td data-label="Data">Retired installation code</td><td data-label="Where">HOTIANA identity service</td><td data-label="Kept for">2 years after account deletion; a one-way code with no name, email or account attached, to prevent reuse of a deleted account's installation.</td></tr>
           <tr><td data-label="Data">Backups of the identity database</td><td data-label="Where">Google Cloud, Toronto</td><td data-label="Kept for">Encrypted daily backups: 30 days. Point-in-time recovery: 7 days. Deleted data leaves backups when they expire.</td></tr>
           <tr><td data-label="Data">Phone notifications, text and files sent to your computer</td><td data-label="Where">Your computer</td><td data-label="Kept for">Notifications: in memory only, at most 60 per phone, up to 6 hours. Text: 2 minutes. Files: until you delete them.</td></tr>
-          <tr><td data-label="Data">Data sent to AI, voice, web-answer, weather, map, media, news or connected services</td><td data-label="Where">That provider</td><td data-label="Kept for">Under that provider's policy.</td></tr>
+          <tr><td data-label="Data">Data sent to AI, voice, web-answer, weather, media, news or connected services</td><td data-label="Where">That provider</td><td data-label="Kept for">Under that provider's policy.</td></tr>
         </tbody>
       </table></div>
     </section>
