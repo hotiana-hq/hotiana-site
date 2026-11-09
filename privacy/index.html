@@ -15,7 +15,7 @@
   <main class="policy">
     <section>
       <h1>Privacy policy</h1>
-      <p class="muted">Last updated 5 November 2026</p>
+      <p class="muted">Last updated 9 November 2026</p>
     </section>
 
     <section>
@@ -30,9 +30,9 @@
         <li><strong>Your vault stays on your phone.</strong> It is not synced to any cloud. HOTIANA turns off Android backup and device-to-device transfer for all of its data.</li>
         <li><strong>Some things do leave your phone, only when you use a feature that needs it:</strong> signing in, connecting an outside AI to your phone (the bridge), cloud voice, web answers, weather, reporting an AI reply, your own computer, Home media and news, your own AI provider, and services you connect yourself. Each is described below with who receives it.</li>
         <li><strong>Nothing from your vault is shared with an outside AI unless you approve that specific answer</strong> with your fingerprint, face or device PIN.</li>
-        <li><strong>You decide which outside AI can act on your phone, on which devices and with which permissions.</strong> You can see and revoke each one in <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>.</li>
+        <li><strong>You decide which outside AI can act on your phone, on which devices and with which permissions.</strong> You can see and revoke each one in <strong>Settings &rsaquo; Account &amp; connections &rsaquo; Connected services &rsaquo; Assistants with access</strong>.</li>
         <li>We do not sell your data and do not use it for advertising or ad tracking.</li>
-        <li>You can <a href="/delete-account/">delete your account</a> in the app or by emailing <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a> from your account's email address.</li>
+        <li>You can <a href="/delete-account/">delete your account</a> in the app, on the web by signing in with Google, or by emailing <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a> from your account's email address.</li>
       </ul>
     </section>
 
@@ -46,7 +46,7 @@
           <tr><td data-label="What"><strong>Sign-in session and connection tokens</strong></td><td data-label="Details">Stored encrypted on your phone.</td></tr>
           <tr><td data-label="What"><strong>Settings and preferences</strong></td><td data-label="Details">Stored on your phone only.</td></tr>
           <tr><td data-label="What"><strong>AI replies shared back to HOTIANA</strong></td><td data-label="Details">Kept on your phone, up to 20 outgoing previews and 50 replies per account.</td></tr>
-          <tr><td data-label="What"><strong>Action record</strong></td><td data-label="Details">Names, devices, times and outcomes of what connected AIs did on your phone. Never message text, request arguments, phone numbers or keys. Stored encrypted on the phone for 90 days, up to 10,000 actions, and excluded from backup and device transfer. You can view, export or delete it in <strong>Settings &rsaquo; Connections &rsaquo; Action record</strong>.</td></tr>
+          <tr><td data-label="What"><strong>Action record</strong></td><td data-label="Details">Names, devices, times and outcomes of what connected AIs did on your phone. Never message text, request arguments, phone numbers or keys. Stored encrypted on the phone for 90 days, up to 10,000 actions, and excluded from backup and device transfer. You can view, export or delete it in <strong>Settings &rsaquo; Account &amp; connections &rsaquo; Connected services &rsaquo; Action record</strong>.</td></tr>
           <tr><td data-label="What"><strong>Notifications</strong> (only if you grant notification access)</td><td data-label="Details">App name, sender, title, message text and available actions are read so HOTIANA can show, announce aloud on the phone, dismiss or reply to them. If you ask cloud voice or a connected AI about a notification, the words it reads go to that service. For apps you choose, HOTIANA keeps today's notifications in an encrypted history on the phone, up to 400. Older days are removed the next time the history is used. With cloud voice, notification information you ask it to read is sent to ElevenLabs; see <a href="#cloud-voice">Cloud voice</a>. If you turn on notifications on your linked computer, they are also shown there; see <a href="#computer">Your own computer</a>.</td></tr>
           <tr><td data-label="What"><strong>On-device speech and assistant processing</strong></td><td data-label="Details">Routing and vault lookups run on the phone. HOTIANA can also run Google's Gemma language model entirely on the phone when its model file is present, with no cloud fallback. The Google Play edition does not download this model.</td></tr>
         </tbody>
@@ -70,7 +70,7 @@
         <li><strong>Relay location:</strong> Google Cloud Run, Toronto, Canada (<code>northamerica-northeast2</code>). <strong>This connection uses TLS.</strong></li>
         <li><strong>What the relay keeps:</strong> requests and results are not stored. A receipt of each finished action is held in memory only while your phone stays connected, for at most 24 hours.</li>
         <li><strong>What the relay logs:</strong> request metadata only: time, event, request ID, a one-way code of the phone or TV ID, status, duration and action name. These logs contain no request content or results. Google Cloud also keeps the web-request logs described above. Logs are kept for 30 days.</li>
-        <li><strong>Seeing and revoking access:</strong> open <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>. It lists each AI, its devices and permissions, when you approved it and when it last renewed access. Tap <strong>Revoke</strong>, then confirm. A revoked AI's next action request is refused; device listings stop within a few seconds.</li>
+        <li><strong>Seeing and revoking access:</strong> open <strong>Settings &rsaquo; Account &amp; connections &rsaquo; Connected services &rsaquo; Assistants with access</strong>. It lists each AI, its devices and permissions, when you approved it and when it last renewed access. Tap <strong>Revoke</strong>, then confirm. A revoked AI's next action request is refused; device listings stop within a few seconds.</li>
         <li>The connected AI provider receives the results and handles them under its own privacy policy. Revoking access stops future requests; it does not erase what that provider already holds. Use the provider's own controls for that.</li>
       </ul>
 
@@ -86,7 +86,7 @@
       <p>You can connect HOTIANA to other online services. Before you sign in, HOTIANA shows which server it will connect to and what that server asks for. Data goes only to that server, for the calls you choose. When you disconnect, HOTIANA revokes the token and deletes it from your phone.</p>
 
       <h3>Your own AI provider (optional)</h3>
-      <p>If you add your own OpenRouter key in <strong>Settings &rsaquo; AI providers</strong>, questions you type go from your phone to <strong>OpenRouter</strong> and the maker of the model you chose, under their policies. Nothing from your vault is sent. Your key is stored encrypted on your phone. Remove the key to stop.</p>
+      <p>If you add your own OpenRouter key in <strong>Settings &rsaquo; Assistant &amp; voice &rsaquo; AI providers</strong>, questions you type go from your phone to <strong>OpenRouter</strong> and the maker of the model you chose, under their policies. Nothing from your vault is sent. Your key is stored encrypted on your phone. Remove the key to stop.</p>
 
       <h3>6. Web answers and weather</h3>
       <ul>
@@ -170,10 +170,11 @@
     <section>
       <h2>Deleting your data</h2>
       <ul>
-        <li><strong>In the app:</strong> <strong>Settings &rsaquo; Account &rsaquo; Delete my HOTIANA account and data</strong>. After a fresh sign-in confirmation, we revoke every connected AI and enrolled device, remove your name, email and picture link at once, and clear HOTIANA's data on this phone once the server confirms. Remaining account records are purged within 7 days and leave backups within 30 days after that. We keep only the one-way installation code described above for 2 years. Signing in again starts a new, empty account.</li>
-        <li><strong>Without the app:</strong> email <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a> from the email address on your HOTIANA account and ask us to delete it. We confirm the request and delete the account and its data the same way within 30 days; the data then leaves backups within 30 days after that. See the <a href="/delete-account/">account deletion page</a> for both routes and their details.</li>
+        <li><strong>In the app:</strong> <strong>Settings &rsaquo; Account &amp; connections &rsaquo; Account &rsaquo; Delete my HOTIANA account and data</strong>. After a fresh sign-in confirmation, we revoke every connected AI and enrolled device, remove your name, email and picture link at once, and clear HOTIANA's data on this phone once the server confirms. Remaining account records are purged within 7 days and leave backups within 30 days after that. We keep only the one-way installation code described above for 2 years. Signing in again starts a new, empty account.</li>
+        <li><strong>On the web:</strong> open <a href="https://hotiana-identity-166068262140.northamerica-northeast2.run.app/account/delete">HOTIANA's account deletion page</a>, sign in with the Google account you use with HOTIANA, and confirm. The account is deleted the same way as in the app; it cannot erase data on your phone.</li>
+        <li><strong>By email:</strong> email <a href="mailto:privacy@hotiana.ca">privacy@hotiana.ca</a> from the email address on your HOTIANA account and ask us to delete it. We confirm the request and delete the account and its data the same way within 30 days; the data then leaves backups within 30 days after that. See the <a href="/delete-account/">account deletion page</a> for every route and its details.</li>
         <li><strong>On your phone only:</strong> you can ask HOTIANA to forget individual facts, remove documents from the documents shelf, and forget people added from contacts. To erase everything local without deleting your account, use Android Settings &rsaquo; Apps &rsaquo; HOTIANA &rsaquo; Storage &rsaquo; Clear storage, or uninstall. The vault is excluded from backups, so this removes it permanently.</li>
-        <li><strong>Signing out or disconnecting</strong> stops future use but does not by itself delete server records. You can revoke one AI in <strong>Settings &rsaquo; Connections &rsaquo; Assistants with access</strong>.</li>
+        <li><strong>Signing out or disconnecting</strong> stops future use but does not by itself delete server records. You can revoke one AI in <strong>Settings &rsaquo; Account &amp; connections &rsaquo; Connected services &rsaquo; Assistants with access</strong>.</li>
         <li>Data released to an outside AI or other provider, or sent to your own computer, must be deleted there.</li>
       </ul>
     </section>
